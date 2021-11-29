@@ -1,0 +1,46 @@
+# ------------------------------------
+#   欢迎您使用阿里云函数计算 FC 组件进行项目开发
+#   组件仓库地址/帮助文档：https://github.com/devsapp/fc
+#   Yaml参考文档：https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md
+#   快速入门：
+#      快速创建应用：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_application.md
+#      快速使用命令：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_function.md
+# ------------------------------------
+
+edition: 1.0.0          #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
+name: fcDeployApp       #  项目名称
+access: "{{ access }}"  #  秘钥别名
+
+services:
+  fc-deploy-test: #  服务名称
+    component: fc  # 组件名称
+    props: #  组件的属性值
+      region: cn-hangzhou
+      service:
+        name: fc-deploy-service
+        description: 'demo for fc-deploy component'
+        internetAccess: true
+      function:
+        name: http-trigger-nodejs12
+        description: this is a test
+        runtime: nodejs12
+        codeUri: ./code
+        # ossBucket:
+        # ossKey:  # conflict with codeUri
+        handler: index.handler
+        memorySize: 128
+        timeout: 60
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+              methods:
+                - GET

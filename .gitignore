@@ -1,0 +1,13 @@
+.s
+.fc
+.DS_Store
+target
+tmp
+.dart_tool
+node-v12.13.0-linux-*
+node_modules
+fc-custom-samples/src/dart/event-demo/code/bootstrap
+fc-custom-samples/src/golang/event-demo/code/bootstrap
+obj
+bin
+Nuget*

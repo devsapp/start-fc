@@ -1,0 +1,32 @@
+# ------------------------------------
+#   欢迎您使用阿里云函数计算 FC 组件进行项目开发
+#   组件仓库地址/帮助文档：https://github.com/devsapp/fc
+#   Yaml参考文档：https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md
+# ------------------------------------
+
+edition: 1.0.0
+name: container-demo
+access: {{ access }}
+vars:
+  region: cn-shenzhen
+services:
+  customContainer-demo:
+    component: fc
+    props:
+      region: ${vars.region}
+      service:
+        name: container-demo
+        internetAccess: true
+      function:
+        name: py39-event-function
+        description: event function powered by flask
+        handler: not-used
+        timeout: 60
+        caPort: 9000
+        memorySize: 256
+        initializationTimeout: 30
+        initializer: not-used
+        runtime: custom-container
+        customContainerConfig:
+          image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-flask:v0.1
+        codeUri: ./code

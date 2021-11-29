@@ -1,0 +1,2 @@
+#!/bin/bash
+/code/node_modules/ts-node/dist/bin.js server.ts
