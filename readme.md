@@ -1,5 +1,7 @@
 # 阿里云函数计算：FC 案例
 
+![图片alt](https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1638188206727_20211129121647053051.png)
+
 ## 本地快速体验
 
 通过该应用，您可以简单快速的创建一个 FC 案例到阿里云函数计算服务。
