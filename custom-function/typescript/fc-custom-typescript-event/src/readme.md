@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init fc-custom-typescript-event -d fc-custom-typescript-event`
 - 进入项目：`cd fc-custom-typescript-event`
-- 构建项目：`cd code && npm install && cd ..`
 - 部署项目：`s deploy -y`
 - 调用函数： `s invoke -e "hello"`
 

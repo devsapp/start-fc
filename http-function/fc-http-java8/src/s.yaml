@@ -8,21 +8,24 @@
 # ------------------------------------
 
 edition: 1.0.0          #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
-name: fcDeployApp       #  项目名称
+name: helloworldApp     #  项目名称
 access: "{{ access }}"  #  秘钥别名
 
 services:
-  fc-deploy-test: #  服务名称
+  helloworld:
     component: fc  # 组件名称
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: s build --use-docker  # 要运行的命令行
+          path: ./ # 命令行运行的路径
     props: #  组件的属性值
       region: cn-hangzhou
       service:
-        name: fc-deploy-service
-        description: 'demo for fc-deploy component'
-        internetAccess: true
+        name: hello-world-service
+        description: 'hello world by serverless devs'
       function:
         name: http-trigger-java8
-        description: this is a test
+        description: 'hello world by serverless devs'
         runtime: java8
         codeUri: ./
         # ossBucket:

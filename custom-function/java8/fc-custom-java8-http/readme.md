@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init fc-custom-java8-http -d fc-custom-java8-http`
 - 进入项目：`cd fc-custom-java8-http`
-- 构建项目：`cd code && mvn package && cd ..`
 - 部署项目：`s deploy -y`
 - 调用函数： 直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名
 

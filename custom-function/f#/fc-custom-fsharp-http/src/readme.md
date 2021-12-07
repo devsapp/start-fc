@@ -4,7 +4,6 @@
 
 - 初始化项目：`s fc-custom-fsharp-http -d fc-custom-fsharp-http`
 - 进入项目：`cd fc-custom-fsharp-http`
-- 构建项目：`make build`
 - 部署项目：`s deploy -y`
 - 调用函数： 直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名
 

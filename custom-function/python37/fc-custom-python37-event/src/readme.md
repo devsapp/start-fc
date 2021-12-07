@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init fc-custom-python37-event -d fc-custom-python37-event`
 - 进入项目：`cd fc-custom-python37-event`
-- 构建项目：`s build --use-docker`
 - 部署项目：`s deploy -y`
 - 调用函数： `s invoke -e "hello"`
 

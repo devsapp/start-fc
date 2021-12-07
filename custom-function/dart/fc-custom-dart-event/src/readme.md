@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init fc-custom-dart-event -d fc-custom-dart-event`
 - 进入项目：`cd fc-custom-dart-event`
-- 构建项目：`make build`
 - 部署项目：`s deploy -y`
 - 调用函数：`s invoke -e "hello"`
 

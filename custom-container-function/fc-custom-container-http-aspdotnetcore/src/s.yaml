@@ -8,21 +8,24 @@
 # ------------------------------------
 
 edition: 1.0.0
-name: container-demo
-access: {{ access }}
+name: helloworldApp
+access: "{{ access }}"
 vars:
-  region: cn-shenzhen
+  region: hangzhou
 services:
-  customContainer-demo:
+  helloworld:
     component: fc
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: s build --use-docker --dockerfile ./code/Dockerfile  # 要运行的命令行
+          path: ./ # 命令行运行的路径
     props:
       region: ${vars.region}
       service:
-        name: container-demo
-        internetAccess: true
+        name: hello-world-service
       function:
         name: aspdotnetcore-http-function
-        description: asp .netcore http function demo
+        description: 'hello world by serverless devs'
         caPort: 80
         memorySize: 512
         handler: not-used
@@ -31,7 +34,6 @@ services:
         customContainerConfig:
           image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-asp-http:v0.1
         codeUri: ./code
-
       triggers:
         - name: httpTrigger
           type: http
@@ -40,14 +42,11 @@ services:
             methods:
               - GET
               - POST
-
       customDomains:
         - domainName: auto
           protocol: HTTP
           routeConfigs:
             - path: /*
-              serviceName: container-demo
-              functionName: aspdotnetcore-http-function
               methods:
                 - GET
                 - POST

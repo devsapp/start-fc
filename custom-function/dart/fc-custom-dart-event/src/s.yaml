@@ -8,18 +8,21 @@
 # ------------------------------------
 
 edition: 1.0.0
-name: fc-custom-dart-event
-access: default
+name: helloworldApp
+access: "{{ access }}"
 vars:
-  region: cn-hangzhou
+  region: hangzhou
 services:
-  fc-dart-demo-dart-func:
+  helloworld:
     component: fc
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: make build  # 要运行的命令行
+          path: ./ # 命令行运行的路径
     props:
       region: ${vars.region}
       service:
-        name: custom-demo
-        internetAccess: true
+        name: hello-world-service
       function:
         name: dartEventFunc
         handler: index.handler

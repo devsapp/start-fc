@@ -3,8 +3,7 @@
 只需几步就可以快速在阿里云函数计算服务上体验一键部署一个 RUST 应用:
 
 - 初始化项目：`s init fc-custom-rust-event -d fc-custom-rust-event`
-- 进入项目：`cd start-cc-http-springboot`
-- 构建项目：`make build`
+- 进入项目：`cd fc-custom-rust-event`
 - 部署项目：`s deploy -y`
 - 调用函数： `s invoke -e "hello"`
 

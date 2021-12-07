@@ -8,19 +8,18 @@
 # ------------------------------------
 
 edition: 1.0.0
-name: transform_fun
-access: default
+name: helloworldApp
+access: "{{ access }}"
 vars:
-  region: cn-hangzhou
+  region: hangzhou
 services:
-  fc-lua-demo-fc-lua:
+  helloworld:
     component: fc
     props:
       region: ${vars.region}
       service:
-        name: custom-demo
-        description: helloworld
-        internetAccess: true
+        name: hello-world-service
+        description: 'hello world by serverless devs'
       function:
         name: luaEventFunc
         handler: index.handler

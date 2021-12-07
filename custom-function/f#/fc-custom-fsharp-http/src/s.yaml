@@ -8,19 +8,22 @@
 # ------------------------------------
 
 edition: 1.0.0
-name: fc-fsharp_demo-fc_fsharp
-access: default
+name: helloworldApp
+access: "{{ access }}"
 vars:
   region: cn-hangzhou
 services:
-  fc-fsharp_demo-fc_fsharp:
+  helloworld:
     component: fc
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: make build  # 要运行的命令行
+          path: ./ # 命令行运行的路径
     props:
       region: ${vars.region}
       service:
-        name: custom-demo
-        description: helloworld
-        internetAccess: true
+        name: hello-world-service
+        description: 'hello world by serverless devs'
       function:
         name: fsharpHttpFunc
         handler: Program.main
@@ -41,6 +44,4 @@ services:
         - domainName: Auto
           protocol: HTTP
           routeConfigs:
-            - serviceName: custom-demo
-              functionName: fsharpHttpFunc
-              path: /*
+            - path: /*

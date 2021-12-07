@@ -5,7 +5,6 @@
 - 初始化项目：`s init start-fc-custom-container-event-python3.9 -d start-cc-py39`
 - 进入项目：`cd start-cc-py39`
 - 修改 s.yaml 中 Image 为自己的 ACR 镜像地址
-- 构建项目：`s build --use-docker --dockerfile ./code/Dockerfile`
 - 部署项目：`s deploy -y`
 - 调用函数：`s invoke -e "hello world"`
 

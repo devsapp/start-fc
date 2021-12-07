@@ -11,3 +11,4 @@ fc-custom-samples/src/golang/event-demo/code/bootstrap
 obj
 bin
 Nuget*
+.idea
