@@ -8,7 +8,7 @@ edition: 1.0.0
 name: chelloworldApp
 access: "{{ access }}"
 vars:
-  region: hangzhou
+  region: cn-hangzhou
 services:
   helloworld:
     component: fc
