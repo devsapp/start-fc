@@ -34,7 +34,7 @@ services:
         initializer: not-used
         runtime: custom-container
         customContainerConfig:
-          image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-springboot-http:v0.1
+          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-springboot-http:v0.1 # 需要换成自己的registry地址
         codeUri: ./code
       triggers:
         - name: httpTrigger
