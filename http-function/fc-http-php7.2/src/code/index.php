@@ -1,4 +1,5 @@
 <?php
+
 use RingCentral\Psr7\Response;
 
 /*
@@ -9,7 +10,8 @@ function initializer($context) {
 }
 */
 
-function handler($request, $context): Response{
+function handler($request, $context): Response
+{
     /*
     $body       = $request->getBody()->getContents();
     $queries    = $request->getQueryParams();
@@ -25,6 +27,7 @@ function handler($request, $context): Response{
         array(
             'custom_header1' => 'v1',
             'custom_header2' => ['v2', 'v3'],
+            'Content-Type' => 'application/json'
         ),
         'hello world'
     );

@@ -17,8 +17,8 @@ services:
     component: fc
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
-        - run: s build --use-docker  # 要运行的命令行
-          path: ./ # 命令行运行的路径
+        - run: mvn package # 要运行的命令行
+          path: ./code # 命令行运行的路径
     props:
       region: ${vars.region}
       service:
