@@ -5,6 +5,6 @@
 using namespace Aliyun::FC::Handlers;
 void SetInvokeAndInitHander()
 {
-    CustomRuntimeHandler::normalHandler = new EchoHandler();
+    CustomRuntimeHandler::normalHandler = NULL;
     CustomRuntimeHandler::httpHandler = new EchoHttpHandler();
 }
