@@ -30,6 +30,7 @@ services:
         memorySize: 512
         runtime: custom
         codeUri: ./bin
+        instanceConcurrency: 4
       triggers:
         - name: http_t
           type: http

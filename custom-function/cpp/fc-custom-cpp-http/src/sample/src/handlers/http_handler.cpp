@@ -11,8 +11,8 @@ namespace Aliyun
             std::string HttpHandler::mInitHandler;
             void HttpHandler::OnInvoke(const FcContext &context, const Pistache::Http::Request &req,
                                        Pistache::Http::ResponseWriter &response)
-            {
-                response.send(Http::Code::Ok, req.body());
+            {                
+                response.send(Http::Code::Ok, "Hello CPP " + req.body(), MIME(Text, Plain));
             }
 
             void HttpHandler::OnInitialize(const FcContext &context)

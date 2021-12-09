@@ -15,19 +15,17 @@ vars:
 services:
   helloworld:
     component: fc
-    actions: # 自定义执行逻辑
-      pre-deploy: # 在deploy之前运行
-        - run: mvn package # 要运行的命令行
-          path: ./code # 命令行运行的路径
     props:
       region: ${vars.region}
       service:
         name: hello-world-service
         description: 'hello world by serverless devs'
       function:
-        name: springbootHttpFunc
-        handler: com.example.demo.DemoApplication::main
-        timeout: 15
+        name: php74HttpFunc
+        handler: server.handler
+        timeout: 30
+        initializationTimeout: 20
+        initializer: index.init
         memorySize: 1024
         runtime: custom
         codeUri: ./code
