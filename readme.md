@@ -34,7 +34,9 @@
   - Golang [fc-custom-golang-event](custom-function/golang/fc-custom-golang-event/src):`s init fc-custom-golang-event`
   - Nodejs10 [fc-custom-nodejs10-event](custom-function/nodejs10/fc-custom-nodejs10-event/src):`s init fc-custom-nodejs10-event`
   - Nodejs12 [fc-custom-nodejs12-event](custom-function/nodejs12/fc-custom-nodejs12-event/src):`s init fc-custom-nodejs12-event`
-  - PHP74-Swoole [fc-custom-php74-event](custom-function/php74/fc-custom-php74-event/src):`s init fc-custom-php74-event`
+  - PHP74-Swoole 
+    - Event函数（事件函数） [fc-custom-php74-event](custom-function/php74/fc-custom-php74-event/src):`s init fc-custom-php74-event`
+    - HTTP函数 [fc-custom-php74-http](custom-function/php74/fc-custom-php74-http/src):`s init fc-custom-php74-http`
   - Python37 
     - Event函数（事件函数） [fc-custom-python37-event](custom-function/python37/fc-custom-python37-event/src):`s init fc-custom-python37-event`
     - HTTP函数  [fc-custom-python37-http](custom-function/python37/fc-custom-python37-http/src):`s init fc-custom-python37-http`
