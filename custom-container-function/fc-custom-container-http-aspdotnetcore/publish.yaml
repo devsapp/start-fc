@@ -2,7 +2,7 @@ Type: Application
 Name: start-fc-custom-container-http-aspdotnetcore
 Provider:
   - 阿里云
-Version: 1.1.8
+Version: 1.1.9
 Description: 快速部署一个基于custom container runtime 的 asp .netcore HTTP 类型的 Hello World 到阿里云函数计算
 HomePage: https://github.com/devsapp/start-fc
 Tags:
