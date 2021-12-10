@@ -1,3 +1,11 @@
+./http-function/fc-http-java8
+./http-function/fc-http-node.js6
+./http-function/fc-http-node.js8
+./http-function/fc-http-node.js10
+./http-function/fc-http-node.js12
+./http-function/fc-http-php7.2
+./http-function/fc-http-python2.7
+./http-function/fc-http-python3.6
 ./event-function/fc-event-java8
 ./event-function/fc-event-node.js6
 ./event-function/fc-event-node.js8

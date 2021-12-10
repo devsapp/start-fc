@@ -22,6 +22,7 @@ vars: # 全局变量
 
 services:
   helloworld: # 业务名称/模块名称
+    component:  fc
 #    actions: # 自定义执行逻辑
 #      pre-deploy: # 在deploy之前运行
 #        - run: s build --use-docker --dockerfile ./code/Dockerfile  # 要运行的命令行
