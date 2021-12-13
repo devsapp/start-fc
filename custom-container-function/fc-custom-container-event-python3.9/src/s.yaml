@@ -38,8 +38,6 @@ services:
         timeout: 60
         caPort: 9000
         memorySize: 256
-        initializationTimeout: 30
-        initializer: not-used
         runtime: custom-container
         customContainerConfig:
           image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-springboot-http:v0.1 # 需要换成自己的registry地址
