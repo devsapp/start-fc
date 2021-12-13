@@ -36,7 +36,7 @@ services:
       function:
         name: luaEventFunc
         memorySize: 1024
-        Timeout: 30
+        timeout: 30
         runtime: custom
         codeUri: ./code
 #  next-function: # 第二个函数的案例，仅供参考
