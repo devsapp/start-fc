@@ -1,13 +1,21 @@
-# 阿里云函数计算 Custom Node.js10 Event 函数案例
+# 阿里云函数计算 Custom Container C++ Event 函数案例
 
-只需几步就可以快速在阿里云函数计算服务上体验一键部署一个 Node.js10 应用:
+只需几步就可以快速在阿里云函数计算服务上体验 C++:
 
-- 初始化项目：`s init fc-custom-nodejs10-event -d fc-custom-nodejs10-event`
-- 进入项目：`cd fc-custom-nodejs10-event`
+- 初始化项目：`s init start-fc-custom-container-event-cpp -d start-cc-event-cpp`
+- 进入项目：`cd start-cc-event-cpp`
+- 修改 s.yaml 中 Image 为自己的 ACR 镜像地址
 - 部署项目：`s deploy -y`
 - 调用函数：`s invoke -e "{\"key\":\"val\"}"`
 
-即可实现`Custom Node.js10` Event 函数案例的初始化、部署整个流程。
+即可实现`Custom Container C++` Event 函数案例的初始化、部署整个流程。
+
+# 二次开发
+
+修改 code/sample/src/handlers/echo_handler.cpp 中的两个函数逻辑即可：
+
+- EchoHandler::OnInvoke
+- EchoHandler::OnInitialize
 
 > 本应用仓库地址：https://github.com/devsapp/start-fc
 

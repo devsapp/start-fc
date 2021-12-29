@@ -1,13 +1,13 @@
-# 阿里云函数计算 Custom Node.js10 Event 函数案例
+# 阿里云函数计算 Custom PHP7.4 Event 函数案例
 
-只需几步就可以快速在阿里云函数计算服务上体验一键部署一个 Node.js10 应用:
+只需几步就可以快速在阿里云函数计算服务上体验一键部署一个 PHP7.4 应用:
 
-- 初始化项目：`s init fc-custom-nodejs10-event -d fc-custom-nodejs10-event`
-- 进入项目：`cd fc-custom-nodejs10-event`
+- 初始化项目：`s init fc-custom-php74-event -d fc-custom-php74-event`
+- 进入项目：`cd fc-custom-php74-event`
 - 部署项目：`s deploy -y`
-- 调用函数：`s invoke -e "{\"key\":\"val\"}"`
+- 调用函数：`s invoke -e "hello"`
 
-即可实现`Custom Node.js10` Event 函数案例的初始化、部署整个流程。
+即可实现`Custom PHP7.4` Event 函数案例的初始化、部署整个流程。
 
 > 本应用仓库地址：https://github.com/devsapp/start-fc
 
