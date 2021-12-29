@@ -5,7 +5,7 @@
 - 初始化项目：`s init fc-custom-python37-event -d fc-custom-python37-event`
 - 进入项目：`cd fc-custom-python37-event`
 - 部署项目：`s deploy -y`
-- 调用函数： `s invoke -e "hello"`
+- 调用函数： `s invoke -e "{}"`
 
 即可实现`Custom Python3.7` Event 函数案例的初始化、部署整个流程。
 

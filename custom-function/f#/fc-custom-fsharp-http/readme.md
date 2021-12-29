@@ -1,22 +1,23 @@
-# 阿里云函数计算 Custom Fsharp HTTP 函数案例
+# Alibaba Cloud Function Computing Custom Fsharp HTTP function
 
-只需几步就可以快速在阿里云函数计算服务上体验一键部署一个 Fsharp 应用:
+You can quickly experience one-click deployment of a Fsharp application on Alibaba Cloud Function Computing Service in just a few steps:
 
-- 初始化项目：`s fc-custom-fsharp-http -d fc-custom-fsharp-http`
-- 进入项目：`cd fc-custom-fsharp-http`
-- 部署项目：`s deploy -y`
-- 调用函数： 直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名
+- Initialize the project: `s fc-custom-fsharp-http -d fc-custom-fsharp-http`
+- Enter the project: `cd fc-custom-fsharp-http`
+- Deployment project: `s deploy -y`
+- Invoke function: Directly use POST or GET method curl to the custom domain name that is generated when deploying the project
 
-即可实现`Custom Fsharp` HTTP 函数案例的初始化、部署整个流程。
-
-> 本应用仓库地址：https://github.com/devsapp/start-fc
+> This application warehouse address: https://github.com/devsapp/start-fc
 
 ------------------------------------
 > # More
-> 欢迎您使用阿里云函数计算 FC 组件进行项目开发   
-> 组件仓库地址/帮助文档：https://github.com/devsapp/fc   
-> Yaml参考文档：https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md   
-> 快速入门：
->   - 快速创建应用：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_application.md
->   - 快速使用命令：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_function.md
+> Welcome to use Alibaba Cloud Function Compute FC component for project development
+> 
+> Component warehouse address/help document: https://github.com/devsapp/fc
+> 
+> Yaml reference documentation: https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md
+> 
+> Quick start:
+>   - Quickly create an application: https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_application.md
+>   - Quick use of commands: https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_function.md
 ------------------------------------

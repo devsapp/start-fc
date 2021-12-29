@@ -1,30 +1,31 @@
-# 阿里云函数计算 Custom Container C++ Event 函数案例
+# Alibaba Cloud Function Computing Custom Container C++ Event function
 
-只需几步就可以快速在阿里云函数计算服务上体验 C++:
+You can quickly experience one-click deployment of a C++ application on Alibaba Cloud Function Computing Service in just a few steps:
 
-- 初始化项目：`s init start-fc-custom-container-event-cpp -d start-cc-event-cpp`
-- 进入项目：`cd start-cc-event-cpp`
-- 修改 s.yaml 中 Image 为自己的 ACR 镜像地址
-- 部署项目：`s deploy -y`
-- 调用函数：`s invoke -e "{\"key\":\"val\"}"`
+- Initialize the project: `s init start-fc-custom-container-event-cpp -d start-cc-event-cpp`
+- Enter the project: `cd start-cc-event-cpp`
+- Modify Image in s.yaml to be your own ACR mirror address
+- Deployment project: `s deploy -y`
+- Invoke function: `s invoke -e "{\"key\":\"val\"}"`
 
-即可实现`Custom Container C++` Event 函数案例的初始化、部署整个流程。
+# Secondary development
 
-# 二次开发
+Modify the two function logic in code/sample/src/handlers/echo_handler.cpp:
 
-修改 code/sample/src/handlers/echo_handler.cpp 中的两个函数逻辑即可：
+-EchoHandler::OnInvoke
+-EchoHandler::OnInitialize
 
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize
-
-> 本应用仓库地址：https://github.com/devsapp/start-fc
+> This application warehouse address: https://github.com/devsapp/start-fc
 
 ------------------------------------
 > # More
-> 欢迎您使用阿里云函数计算 FC 组件进行项目开发   
-> 组件仓库地址/帮助文档：https://github.com/devsapp/fc   
-> Yaml参考文档：https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md   
-> 快速入门：
->   - 快速创建应用：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_application.md
->   - 快速使用命令：https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_function.md
+> Welcome to use Alibaba Cloud Function Compute FC component for project development
+> 
+> Component warehouse address/help document: https://github.com/devsapp/fc
+> 
+> Yaml reference documentation: https://github.com/devsapp/fc/blob/main/docs/zh/yaml.md
+> 
+> Quick start:
+>   - Quickly create an application: https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_application.md
+>   - Quick use of commands: https://github.com/devsapp/fc/blob/main/docs/zh/quick_start_function.md
 ------------------------------------
