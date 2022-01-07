@@ -12,3 +12,4 @@ obj
 bin
 Nuget*
 .idea
+node-v12.16.1-linux-x64*

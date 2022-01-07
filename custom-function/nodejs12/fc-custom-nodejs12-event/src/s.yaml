@@ -25,6 +25,8 @@ services:
     component: fc
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
+        - run: wget http://mirrors.nju.edu.cn/nodejs/v12.16.1/node-v12.16.1-linux-x64.tar.gz -O node-v12.16.1-linux-x64.tar.gz && tar -zxvf node-v12.16.1-linux-x64.tar.gz && rm -rf node-v12.16.1-linux-x64.tar.gz # 要运行的命令行
+          path: ./code # 命令行运行的路径
         - run: s build --use-docker  # 要运行的命令行
           path: ./ # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
@@ -40,6 +42,8 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 4
+        environmentVariables:
+          PATH: /code/node-v12.16.1-linux-x64/bin
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function
