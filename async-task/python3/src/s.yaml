@@ -16,7 +16,6 @@ access: "{{ access }}"
 
 vars: # 全局变量
   region: cn-hangzhou
-  uid: 1431999136518149
   service:
     name: async-task-service
     description: 'async task  by serverless devs'
