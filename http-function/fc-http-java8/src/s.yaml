@@ -25,7 +25,7 @@ services:
     component:  fc
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
-        - run: s build --use-docker  # 要运行的命令行
+        - run: s build # 要运行的命令行
           path: ./ # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
 #        - run: s versions   # 要运行的命令行
