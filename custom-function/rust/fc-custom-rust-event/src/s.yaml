@@ -30,6 +30,9 @@ services:
 #      post-deploy: # 在deploy之后运行
 #        - run: s versions   # 要运行的命令行
 #          path: ./ # 命令行运行的路径
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
       function:
         name: rustEventFunc
         timeout: 30

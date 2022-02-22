@@ -39,6 +39,14 @@ services:
         timeout: 30
         runtime: custom
         codeUri: ./code
+        customRuntimeConfig:
+          command:
+            - /code/nginx
+          args:
+            - '-p'
+            - '/tmp'
+            - '-c'
+            - '/code/nginx.conf'
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function
