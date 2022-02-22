@@ -40,6 +40,10 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 4
+        customRuntimeConfig:
+          command:
+            - php
+            - server.php
       triggers:
         - name: httpTrigger
           type: http

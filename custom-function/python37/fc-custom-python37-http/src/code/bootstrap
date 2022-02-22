@@ -1,2 +1,0 @@
-#!/bin/bash
-gunicorn -c gunicorn_conf.py server:app

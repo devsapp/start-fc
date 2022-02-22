@@ -39,6 +39,10 @@ services:
         runtime: custom
         codeUri: ./code
         timeout: 30
+        customRuntimeConfig:
+          command:
+            - /code/node_modules/ts-node/dist/bin.js 
+            - server.ts
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function

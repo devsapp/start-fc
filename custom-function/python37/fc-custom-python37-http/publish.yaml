@@ -2,7 +2,7 @@ Type: Application
 Name: fc-custom-python37-http
 Provider:
   - 阿里云
-Version: 1.1.9
+Version: 1.1.10
 Description: 快速部署一个基于custom runtime 的 Python3.7 HTTP 类型的 Hello World 到阿里云函数计算
 HomePage: https://github.com/devsapp/start-fc
 Tags:

@@ -40,6 +40,12 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 4
+        customRuntimeConfig:
+          command:
+            - java 
+          args:
+            - '-jar'
+            - 'target/demo.jar'
       triggers:
         - name: httpTrigger
           type: http
