@@ -10,3 +10,4 @@ custom-function/python37/fc-custom-python37-event
 custom-function/python37/fc-custom-python37-http
 custom-function/ruby/fc-custom-ruby-event
 custom-function/typescript/fc-custom-typescript-event
+http-function/fc-http-node.js14
