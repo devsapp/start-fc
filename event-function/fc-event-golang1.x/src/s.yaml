@@ -26,7 +26,7 @@ services:
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
         - run: GO111MODULE=on go get github.com/aliyun/fc-runtime-go-sdk
-          path: ./
+          path: ./code
         - run: GOOS=linux CGO_ENABLED=0 go build -o target/main main.go # 要运行的命令行
           path: ./code # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
