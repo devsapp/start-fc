@@ -21,6 +21,7 @@
   - [fc-event-python2.7](event-function/fc-event-python2.7/src):`s init start-fc-event-python2`
   - [fc-event-python3.6](event-function/fc-event-python3.6/src):`s init start-fc-event-python3`
   - [fc-event-java8](event-function/fc-event-java8/src):`s init start-fc-event-java8`
+  - [fc-event-golang1.x](event-function/fc-event-java8/src):`s init start-fc-event-golang1.x`
 - HTTP函数
   - [fc-http-node.js6](http-function/fc-http-node.js6/src):`s init start-fc-http-nodejs6`
   - [fc-http-node.js8](http-function/fc-http-node.js8/src):`s init start-fc-http-nodejs8`
@@ -30,6 +31,7 @@
   - [fc-http-python2.7](http-function/fc-http-python2.7/src):`s init start-fc-http-python2`
   - [fc-http-python3.6](http-function/fc-http-python3.6/src):`s init start-fc-http-python3`
   - [fc-http-java8](http-function/fc-http-java8/src):`s init start-fc-http-java8`
+  - [fc-http-golang1.x](http-function/fc-http-java8/src):`s init start-fc-http-golang1.x`
 - Custom案例（自定义运行时）
   - Golang [fc-custom-golang-event](custom-function/golang/fc-custom-golang-event/src):`s init fc-custom-golang-event`
   - Nodejs10 [fc-custom-nodejs10-event](custom-function/nodejs10/fc-custom-nodejs10-event/src):`s init fc-custom-nodejs10-event`
