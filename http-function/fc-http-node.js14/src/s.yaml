@@ -41,7 +41,7 @@ services:
         # ossBucket:
         # ossKey:  # conflict with codeUri
         handler: index.handler
-        memorySize: 148
+        memorySize: 128
         timeout: 60
       triggers:
         - name: httpTrigger
