@@ -23,10 +23,12 @@ vars: # 全局变量
 services:
   helloworld: # 业务名称/模块名称
     component:  fc
-#    actions: # 自定义执行逻辑
-#      pre-deploy: # 在deploy之前运行
-#        - run: s build --use-docker --dockerfile ./code/Dockerfile  # 要运行的命令行
-#          path: ./ # 命令行运行的路径
+    actions: # 自定义执行逻辑
+      pre-deploy: # 在deploy之前运行
+        - run: GO111MODULE=on go get github.com/aliyun/fc-runtime-go-sdk
+          path: ./code
+        - run: GOOS=linux CGO_ENABLED=0 go build -o target/main main.go # 要运行的命令行
+          path: ./code # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
 #        - run: s versions   # 要运行的命令行
 #          path: ./ # 命令行运行的路径
@@ -34,29 +36,13 @@ services:
       region: ${vars.region}
       service: ${vars.service}
       function:
-        name: http-trigger-nodejs14
+        name: event-go1
         description: 'hello world by serverless devs'
-        runtime: nodejs14
-        codeUri: ./code
-        # ossBucket:
-        # ossKey:  # conflict with codeUri
-        handler: index.handler
+        runtime: go1
+        codeUri: ./code/target
+        handler: main
         memorySize: 128
         timeout: 60
-      triggers:
-        - name: httpTrigger
-          type: http
-          config:
-            authType: anonymous
-            methods:
-              - GET
-      customDomains:
-        - domainName: auto
-          protocol: HTTP
-          routeConfigs:
-            - path: /*
-              methods:
-                - GET
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function
