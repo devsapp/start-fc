@@ -2,11 +2,15 @@ custom-function/rust/fc-custom-rust-event
 custom-function/java8/fc-custom-java8-http
 custom-function/lua/fc-custom-lua-event
 custom-function/nodejs10/fc-custom-nodejs10-event
+custom-function/nodejs10/fc-custom-nodejs10-websocket
 custom-function/nodejs12/fc-custom-nodejs12-event
+custom-function/nodejs12/fc-custom-nodejs12-websocket
+custom-function/golang/fc-custom-golang-websocket
 custom-function/php74/fc-custom-php74-event
 custom-function/php74/fc-custom-php74-http
 custom-function/powershell/fc-custom-powershell-event
 custom-function/python37/fc-custom-python37-event
 custom-function/python37/fc-custom-python37-http
+custom-function/python37/fc-custom-python37-websocket
 custom-function/ruby/fc-custom-ruby-event
 custom-function/typescript/fc-custom-typescript-event
