@@ -1,4 +1,3 @@
-custom-function/nodejs10/fc-custom-nodejs10-websocket
-custom-function/nodejs12/fc-custom-nodejs12-websocket
-custom-function/golang/fc-custom-golang-websocket
-custom-function/python37/fc-custom-python37-websocket
+custom-container-function/fc-custom-container-websocket-golang
+custom-container-function/fc-custom-container-websocket-nodejs14
+custom-container-function/fc-custom-container-websocket-python3.9
