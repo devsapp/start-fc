@@ -47,3 +47,4 @@ services:
             authType: anonymous
             methods:
               - GET
+              - POST

@@ -50,6 +50,7 @@ services:
             authType: anonymous
             methods:
               - GET
+              - POST
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function

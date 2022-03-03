@@ -47,7 +47,19 @@ services:
         customRuntimeConfig:
           command:
             - /code/node-v12.16.1-linux-x64/bin/node
-            - server.js
+            - index.js
+        #environmentVariables:
+        #  PORT: 9000
+      #customDomains:
+      #  - domainName: auto
+      #    protocol: HTTP
+      #    routeConfigs:
+      #      - path: /*
+      #        serviceName: hello-world-service
+      #        functionName: node12WebSocketFunc
+      #        methods:
+      #          - GET
+      #          - POST
       triggers:
         - name: http_t
           type: http
@@ -55,3 +67,4 @@ services:
             authType: anonymous
             methods:
               - GET
+              - POST
