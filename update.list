@@ -1,2 +1,1 @@
-event-function/fc-event-golang1.x
-http-function/fc-http-golang1.x
+custom-function/nodejs12/fc-custom-nodejs12-websocket
