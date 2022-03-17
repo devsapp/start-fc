@@ -1,1 +1,2 @@
-custom-function/nodejs12/fc-custom-nodejs12-websocket
+event-function/fc-event-java8
+http-function/fc-http-java8
