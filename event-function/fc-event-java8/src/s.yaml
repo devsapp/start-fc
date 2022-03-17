@@ -25,7 +25,7 @@ services:
     component:  fc
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
-        - run: s build # 要运行的命令行
+        - run: mvn package # 要运行的命令行
           path: ./ # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
 #        - run: s versions   # 要运行的命令行
@@ -37,7 +37,7 @@ services:
         name: event-java8
         description: 'hello world by serverless devs'
         runtime: java8
-        codeUri: ./
+        codeUri: ./target
         # ossBucket:
         # ossKey:  # conflict with codeUri
         handler: example.App::handleRequest
