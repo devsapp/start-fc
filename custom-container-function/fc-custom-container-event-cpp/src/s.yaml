@@ -24,7 +24,7 @@ services:
     component:  fc
     actions: # 自定义执行逻辑
       pre-deploy: # 在deploy之前运行
-        - run: s build --use-docker --dockerfile ./code/Dockerfile  # 要运行的命令行
+        - run: export DOCKER_BUILDKIT=0 && s build --use-docker --dockerfile ./code/Dockerfile  # 要运行的命令行
           path: ./ # 命令行运行的路径
 #      post-deploy: # 在deploy之后运行
 #        - run: s versions   # 要运行的命令行
@@ -36,11 +36,11 @@ services:
         name: cpp-event-function
         description: 'hello world by serverless devs'
         caPort: 9000
-        memorySize: 256
+        memorySize: 1024
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-springboot-http:v0.1 # 需要换成自己的registry地址
+          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-cpp-event:v0.1 # 需要换成自己的registry地址
         codeUri: ./code
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：

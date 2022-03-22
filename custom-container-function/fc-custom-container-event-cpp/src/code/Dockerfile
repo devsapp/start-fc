@@ -1,8 +1,7 @@
 FROM python:stretch
-RUN sed -i "s@http://deb.debian.org@http://mirrors.aliyun.com@g" /etc/apt/sources.list
-RUN sed -i "s@http://security.debian.org@http://mirrors.aliyun.com@g" /etc/apt/sources.list && rm -rf /var/lib/apt/lists/* && apt-get update
 
-RUN apt-get install -y gcc g++ openssl tar wget
+RUN apt-get update && apt-get install -y gcc g++ openssl tar wget libopencv-dev
+
 RUN pip install --upgrade cmake  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN mkdir /tmp/bin
@@ -19,4 +18,8 @@ ENV LD_LIBRARY_PATH=/usr/lib
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY --from=0 /tmp/bin/bootstrap  ./bootstrap
+COPY ./dog.jpg ./dog.jpg
+
+RUN apt-get update && apt-get install -y libopencv-dev
+
 ENTRYPOINT ["/usr/src/app/bootstrap"]

@@ -1,6 +1,8 @@
 #include "echo_handler.h"
+#include<opencv2/opencv.hpp>
 using namespace std;
 using namespace Pistache;
+using namespace cv;
 
 namespace Aliyun
 {
@@ -11,6 +13,9 @@ namespace Aliyun
             std::string EchoHandler::mInitHandler;
             void EchoHandler::OnInvoke(const string &payload, const FcContext &context, string &response)
             {
+                Mat src = imread("/usr/src/app/dog.jpg");
+                cout << "Width : " << src.cols << endl;
+                cout << "Height: " << src.rows << endl; 
                 response = EchoHandler::mInitHandler + payload;
             }
 
