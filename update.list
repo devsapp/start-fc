@@ -1,2 +1,5 @@
-event-function/fc-event-java8
-http-function/fc-http-java8
+custom-container-function/fc-custom-container-event-python3.9
+custom-container-function/fc-custom-container-event-cpp
+custom-container-function/fc-custom-container-event-nodejs14
+custom-container-function/fc-custom-container-http-aspdotnetcore
+custom-container-function/fc-custom-container-http-cp

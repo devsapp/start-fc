@@ -41,7 +41,7 @@ services:
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-springboot-http:v0.1 # 需要换成自己的registry地址
+          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-aspdotnetcore-http:v0.1 # 需要换成自己的registry地址
         codeUri: ./code
       triggers:
         - name: httpTrigger

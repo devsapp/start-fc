@@ -40,7 +40,7 @@ services:
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-springboot-http:v0.1 # 需要换成自己的registry地址
+          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-nodejs14-event:v0.1 # 需要换成自己的registry地址
         codeUri: ./code
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
