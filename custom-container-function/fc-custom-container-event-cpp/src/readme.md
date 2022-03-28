@@ -2,7 +2,7 @@
 
 <toc>
 
-<p align="center"> 中文 | <a href="./readme_en.md">英文 </a>  </p>
+<p align="center"><b> 中文 | <a href="./readme_en.md"> English </a>  </b></p>
 
 - [快速开始](#快速开始)
     - [通过应用中心部署](#通过应用中心部署)
