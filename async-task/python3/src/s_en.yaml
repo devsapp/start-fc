@@ -24,8 +24,9 @@ access: "{{ access }}"
 vars: # global variables
   region: cn-hangzhou
   service:
-    name: hello-world-service
-    description: 'hello world by serverless devs'
+    name: async-task-service
+    description: 'async task by serverless devs'
+    logConfig: auto
 
 services:
   helloworld: # business name/module name
@@ -36,26 +37,63 @@ services:
     actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
       pre-deploy:    # run before deploy
         - component: fc build --use-docker --dockerfile ./code/Dockerfile # The component to run, the format is [component: component name command parameter] (you can get the component list through s cli registry search --type Component)
-#        - run: docker build xxx                  # System command to execute, similar to a hook
-#          path: ./src                            # The path to execute system commands/hooks
-#        - plugin: myplugin                       # and running plugins (you can get a list of components via s cli registry search --type Plugin)
-#          args:                                  # parameter information of the plugin
-#            testKey: testValue
-#      post-deploy:                               # run after deploy
-#        - component: fc versions publish         # command line to run
+    #        - run: docker build xxx                  # System command to execute, similar to a hook
+    #          path: ./src                            # The path to execute system commands/hooks
+    #        - plugin: myplugin                       # and running plugins (you can get a list of components via s cli registry search --type Plugin)
+    #          args:                                  # parameter information of the plugin
+    #            testKey: testValue
+    #      post-deploy:                               # run after deploy
+    #        - component: fc versions publish         # command line to run
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
       service: ${vars.service}
+        function:
+          name: async-task-func
+          description: 'async task function by serverless devs'
+          runtime: python3
+          codeUri: ./code/async-task
+          handler: index.handler
+          memorySize: 512
+          timeout: 600
+          asyncConfiguration:
+            destination:
+              onSuccess: acs:fc:::services/async-task-service/functions/dest-succ
+              onFailure: acs:fc:::services/async-task-service/functions/dest-fail
+            maxAsyncEventAgeInSeconds: 7200
+            maxAsyncRetryAttempts: 3
+            statefulInvocation: true
+
+  dest-succ:
+    # If you only want to perform related operations on the business below dest-succ, you can add dest-succ to the command line, for example:
+    # Build only dest-succ: s dest-succ build
+    component:  fc
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
       function:
-        name: custom-cpp-event-function
-        description: 'hello world by serverless devs'
-        caPort: 9000
-        memorySize: 256
+        name: dest-succ
+        description: 'async task destnation success function by serverless devs'
+        runtime: python3
+        codeUri: ./code/dest-succ
+        handler: index.handler
+        memorySize: 512
         timeout: 60
-        runtime: custom-container
-        customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-cpp-event:v0.1 # You need to replace it with your own registry address
-        codeUri: ./code
+
+  dest-fail:
+    # If you only want to perform related operations on the business below dest-fail, you can add dest-fail to the command line, for example:
+    # Build only dest-fail: s dest-fail build
+    component: fc
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: dest-fail
+        description: 'async task destnation fail function by serverless devs'
+        runtime: python3
+        codeUri: ./code/dest-fail
+        handler: index.handler
+        memorySize: 512
+        timeout: 60
 #  next-function: # The case of the second function, just for reference
 #    # If you execute s deploy under the current project, the modules will be deployed at the same time:
 #    #   helloworld: service hello-world-service, function cpp-event-function
