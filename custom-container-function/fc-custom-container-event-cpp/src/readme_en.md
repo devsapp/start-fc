@@ -2,7 +2,7 @@
 
 <toc>
 
-<p align="cneter"> <a href="./readme.md"> 中文 </a> | 英文 </p>
+<p align="center"> <a href="./readme.md"> 中文 </a> | 英文 </p>
 
 - [Quick start](#Quick-start)
     - [Deploy via command line tool](#Deploy-via-command-line-tools)
