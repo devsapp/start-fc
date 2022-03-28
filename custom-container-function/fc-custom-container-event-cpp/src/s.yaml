@@ -22,9 +22,9 @@ name: hello-world-app
 access: "{{ access }}"
 
 vars: # 全局变量
-  region: cn-hangzhou
+  region: {{ region }}
   service:
-    name: hello-world-service
+    name: {{ serviceName }}
     description: 'hello world by serverless devs'
 
 services:
@@ -47,14 +47,14 @@ services:
       region: ${vars.region}              # 关于变量的使用方法，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#变量赋值
       service: ${vars.service}
       function:
-        name: custom-cpp-event-function
+        name: {{ functionName }}
         description: 'hello world by serverless devs'
         caPort: 9000
         memorySize: 256
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fc-demo/fc-cpp-event:v0.1 # 需要换成自己的registry地址
+          image: {{ acrRegistry }}
         codeUri: ./code
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
