@@ -2,7 +2,7 @@
 
 <toc>
 
-<p align="center"> <a href="./readme.md"> 中文 </a> | 英文 </p>
+<p align="center"><b> <a href="./readme.md"> 中文 </a> | English </b></p>
 
 - [Quick start](#Quick-start)
     - [Deploy via command line tool](#Deploy-via-command-line-tools)
@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/cpp/fc-custom-cpp-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-cpp/src)
 
 ## Deploy via command line tools
 

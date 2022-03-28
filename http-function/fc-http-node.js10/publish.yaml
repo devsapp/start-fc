@@ -13,8 +13,48 @@ Category: 新手入门
 Service:
   函数计算:
     Authorities:
-      - 创建函数
-      - 删除函数
-      - 创建服务
-      - 删除服务
-    Runtime: Node.JS
+      - AliyunFCFullAccess
+    Runtime: Node.js10
+Parameters:
+  type: object
+  additionalProperties: false # 不允许增加其他属性
+  required: # 必填项
+    - region
+    - serviceName
+    - functionName
+  properties:
+    region:
+      title: 地域
+      type: string
+      default: cn-hangzhou
+      description: 创建应用所在的地区
+      enum:
+        - cn-beijing
+        - cn-hangzhou
+        - cn-shanghai
+        - cn-qingdao
+        - cn-zhangjiakou
+        - cn-huhehaote
+        - cn-shenzhen
+        - cn-chengdu
+        - cn-hongkong
+        - ap-southeast-1
+        - ap-southeast-2
+        - ap-southeast-3
+        - ap-southeast-5
+        - ap-northeast-1
+        - eu-central-1
+        - eu-west-1
+        - us-west-1
+        - us-east-1
+        - ap-south-1
+    serviceName:
+      title: 服务名
+      type: string
+      default: hello-world-service
+      description: 服务名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-128 之间
+    functionName:
+      title: 函数名
+      type: string
+      default: start-fc-http-nodejs10
+      description: 函数名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-64 之间

@@ -2,6 +2,8 @@
 
 ![图片alt](https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1638188206727_20211129121647053051.png)
 
+<p align="center"><b> 中文 | <a href="./readme_en.md"> English </a>  </b></p>
+
 ## 本地快速体验
 
 通过该应用，您可以简单快速的创建一个 FC 案例到阿里云函数计算服务。
@@ -62,6 +64,13 @@
       - [fc-custom-container-http-cpp](custom-container-function/fc-custom-container-http-cpp/src):`s init start-fc-custom-container-http-cpp`
       - [fc-custom-container-http-springboot](custom-container-function/fc-custom-container-http-springboot/src):`s init start-fc-custom-container-http-springboot`
       - [fc-custom-container-http-aspdotnetcore](custom-container-function/fc-custom-container-http-aspdotnetcore/src):`s init start-fc-custom-container-http-aspdotnetcore`
+  - Websocket案例
+      - [fc-custom-container-websocket-golang](custom-container-function/fc-custom-container-websocket-golang/src):`s init start-fc-custom-container-websocket-golang`
+      - [fc-custom-container-websocket-nodejs14](custom-container-function/fc-custom-container-websocket-nodejs14/src):`s init start-fc-custom-container-websocket-nodejs14`
+      - [fc-custom-container-websocket-python3.9](custom-container-function/fc-custom-container-websocket-python3.9/src):`s init start-fc-custom-container-websocket-python3.9`
+- 任务
+  - [Python3](async-task/python3/src):`s init start-async-task-python3`
+
 ---
 
 > - Serverless Devs 项目：https://www.github.com/serverless-devs/serverless-devs

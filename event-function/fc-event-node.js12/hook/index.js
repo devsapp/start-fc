@@ -3,16 +3,18 @@ async function preInit(inputObj) {
     /  _ \\/ \\   / \\\\  \\/// \\ /\\/ \\  /|  /    //   _\\
     | / \\|| |   | | \\  / | | ||| |\\ ||  |  __\\|  /  
     | |-||| |_/\\| | / /  | \\_/|| | \\||  | |   |  \\__
-    \\_/ \\|\\____/\\_//_/   \\____/\\_/  \\|  \\_/   \\____/`)
+    \\_/ \\|\\____/\\_//_/   \\____/\\_/  \\|  \\_/   \\____/
+    `)
 }
 
 async function postInit(inputObj) {
-    console.log(`\n    Welcome to the Aliyun FC start application
-     This application requires to open these services: 
+    console.log(`\nThis application requires to open these services: 
          FC : https://fc.console.aliyun.com/
      
-     * 项目初始化完成，您可以直接进入项目目录下，并使用 s deploy 进行项目部署
-     \n`)
+    * Additional note: 
+      1. The Serverless Devs version required by the current project is at least v2.0.103. You can view the current version through [s -v] and upgrade the version through [npm install -g @serverless-devs/s].
+    * After the project is initialized, you can directly enter the project directory and use s deploy to deploy the project
+    \n`)
 }
 
 module.exports = {
