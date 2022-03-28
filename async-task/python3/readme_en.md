@@ -1,4 +1,4 @@
-# Alibaba Cloud Function Compute Python3.6 Event function case
+# Alibaba Cloud Function Compute Python3.6 Async Task function case
 
 <toc>
 
@@ -13,17 +13,20 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-python3.6/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/async-task/python3/src)
 
 ## Deploy via command line tools
 
 > Before starting, you need to install the Serverless Devs developer tools: `npm install @serverless-devs/s -g`, for more installation methods, please refer to [Serverless Devs Installation Documentation](https://www.serverless-devs.com/serverless-devs/install) , you also need to configure key information for Alibaba Cloud. For the method of configuring key information, please refer to [Alibaba Cloud Key Configuration Document](https://www.serverless-devs.com/fc/config)
 
-- Initialize the project: `s init start-fc-event-python3 -d start-fc-event-python3`
+- Initialize the project: `s init start-async-task-python3 -d start-async-task-python3`
     > It involves determining the selection of the key, the determination of the service name, the determination of the function name, and the determination of the container image
-- Enter the project: `cd start-fc-event-python3`
+- Enter the project: `cd start-async-task-python3`
 - Deploy the project: `s deploy -y`
-- Invoke function: `s invoke -e '{"key":"val"}'`
+- Invoke function:
+   - 1. `s async-task invoke -e {} --invocation-type async`,  The task function is called successfully once. It is expected that after 30s, the function will be executed successfully, which will trigger the call of DeST succ function once
+   - 2. `s async-task invoke -e {"mock_error":1} --invocation-type async`, Call the task function once. It is expected that if the task function fails once, it will trigger the call of DeST fail function once
+   - 3. `s async-task invoke -e {} --invocation-type async`,  Successfully call the task function once. During the function execution, canceling the execution of the task function on the console will trigger the call of DeST fail function once
 
 # Application details
 
