@@ -15,13 +15,13 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/cpp/fc-custom-cpp-event/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-cpp/src)
 
 ## 通过应用中心部署
 
 <appcenter>
 
-您可以在阿里云 [:earth_asia: Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp)，快速体验该应用。
+您可以在阿里云:earth_asia: Serverless 应用中心[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp) ，快速体验该应用。
 
 </appcenter>
 

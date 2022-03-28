@@ -1,4 +1,4 @@
-# Alibaba Cloud Function Compute Custom Container C++ Event function case
+# Alibaba Cloud Function Compute Custom Container ASP.NET Core HTTP function case
 
 <toc>
 
@@ -13,24 +13,21 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-cpp/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-http-aspdotnetcore/src)
 
 ## Deploy via command line tools
 
 > Before starting, you need to install the Serverless Devs developer tools: `npm install @serverless-devs/s -g`, for more installation methods, please refer to [Serverless Devs Installation Documentation](https://www.serverless-devs.com/serverless-devs/install) , you also need to configure key information for Alibaba Cloud. For the method of configuring key information, please refer to [Alibaba Cloud Key Configuration Document](https://www.serverless-devs.com/fc/config)
 
-- Initialize the project: `s init start-fc-custom-container-event-cpp -d start-cc-event-cpp`
+- Initialize the project: `s init start-fc-custom-container-http-aspdotnetcore -d start-cc-aspdotnetcore-http`
     > It involves determining the selection of the key, the determination of the service name, the determination of the function name, and the determination of the container image
-- Enter the project: `cd start-cc-event-cpp`
+- Enter the project: `cd start-cc-aspdotnetcore-http`
 - Deploy the project: `s deploy -y`
-- Invoke function: `s invoke -e "{\"key\":\"val\"}"`
+- Invoke function: Directly use POST or GET method curl to the custom domain name that is generated when deploying the project
 
 # Application details
 
-This application is a case of Alibaba Cloud Function Computing Custom Container C++ Event function. If you want to improve based on this application, you can modify the two function logics in `code/sample/src/handlers/echo_handler.cpp`:
-
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize
+This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.
 
 # About Us
 

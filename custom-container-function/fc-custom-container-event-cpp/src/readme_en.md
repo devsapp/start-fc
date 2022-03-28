@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/cpp/fc-custom-cpp-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-cpp/src)
 
 ## Deploy via command line tools
 

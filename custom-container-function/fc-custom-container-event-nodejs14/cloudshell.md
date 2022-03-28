@@ -1,6 +1,6 @@
-# 快速体验 Custom Container C++ Event 函数案例
+# 快速体验 Custom Container Node.js14 Event 函数案例
 
-欢迎您使用Serverless Devs开发者工具进行项目开发，本实验是基于Serverless Devs部署 Custom Container C++ Event 案例到阿里云函数计算。
+欢迎您使用Serverless Devs开发者工具进行项目开发，本实验是基于Serverless Devs部署 Custom Container Node.js14 Event 案例到阿里云函数计算。
 
 整个实验过程包括：
 - [下载工具](#下载工具)
@@ -9,7 +9,7 @@
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-cpp/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-event-nodejs14/src)
 
 ## 下载工具
 
@@ -38,14 +38,14 @@ npm install -g @serverless-devs/s
 进行项目初始化：
 
 ```
-s init start-fc-custom-container-event-cpp -d start-cc-event-cpp
+s init start-fc-custom-container-event-nodejs14 -d start-cc-nodejs14
 ```
 
 在初始化的过程中，可能涉及到部分服务的开通、参数的获取以及参数的定义，请根据命令行的提醒进行具体的操作。
 
 ## 部署项目
 
-- 进入项目：`cd start-cc-event-cpp`
+- 进入项目：`cd start-cc-nodejs14`
 - 进行项目的部署：`s deploy`
 
 稍等片刻，即可完成项目的部署。

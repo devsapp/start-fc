@@ -3,7 +3,8 @@ async function preInit(inputObj) {
     /  _ \\/ \\   / \\\\  \\/// \\ /\\/ \\  /|  /    //   _\\
     | / \\|| |   | | \\  / | | ||| |\\ ||  |  __\\|  /  
     | |-||| |_/\\| | / /  | \\_/|| | \\||  | |   |  \\__
-    \\_/ \\|\\____/\\_//_/   \\____/\\_/  \\|  \\_/   \\____/`)
+    \\_/ \\|\\____/\\_//_/   \\____/\\_/  \\|  \\_/   \\____/
+    `)
 }
 
 async function postInit(inputObj) {
@@ -17,7 +18,7 @@ async function postInit(inputObj) {
          > PS: When deploying, you also need to modify the image field in s.yaml to configure the address for your own acr
       2. The Serverless Devs version required by the current project is at least v2.0.103. You can view the current version through [s -v] and upgrade the version through [npm install -g @serverless-devs/s].
     * After the project is initialized, you can directly enter the project directory and use s deploy to deploy the project
-     \n`)
+    \n`)
 }
 
 module.exports = {

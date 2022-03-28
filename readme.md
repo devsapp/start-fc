@@ -62,6 +62,11 @@
       - [fc-custom-container-http-cpp](custom-container-function/fc-custom-container-http-cpp/src):`s init start-fc-custom-container-http-cpp`
       - [fc-custom-container-http-springboot](custom-container-function/fc-custom-container-http-springboot/src):`s init start-fc-custom-container-http-springboot`
       - [fc-custom-container-http-aspdotnetcore](custom-container-function/fc-custom-container-http-aspdotnetcore/src):`s init start-fc-custom-container-http-aspdotnetcore`
+  - Websocket案例
+      - [fc-custom-container-websocket-golang](custom-container-function/fc-custom-container-websocket-golang/src):`s init start-fc-custom-container-websocket-golang`
+      - [fc-custom-container-websocket-nodejs14](custom-container-function/fc-custom-container-websocket-nodejs14/src):`s init start-fc-custom-container-websocket-nodejs14`
+      - [fc-custom-container-websocket-python3.9](custom-container-function/fc-custom-container-websocket-python3.9/src):`s init start-fc-custom-container-websocket-python3.9`
+
 ---
 
 > - Serverless Devs 项目：https://www.github.com/serverless-devs/serverless-devs
