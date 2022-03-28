@@ -1,95 +1,105 @@
 dirList = [
     {
-        "{{titleName}}": "Node.js14 Event",
-        "{{appDir}}": "fc-custom-container-event-nodejs14",
-        "{{appName}}": "start-fc-custom-container-event-nodejs14",
-        "{{appTempDir}}": "start-cc-nodejs14",
-        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
-        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
-        "{{invoke_zh}}": "s invoke -e '{\"key\":\"val\"}'",
-        "{{invoke_en}}": "s invoke -e '{\"key\":\"val\"}'"
-    },
-{
-        "{{titleName}}": "Python3.9 Event",
-        "{{appDir}}": "fc-custom-container-event-python3.9",
-        "{{appName}}": "start-fc-custom-container-event-python3.9",
-        "{{appTempDir}}": "start-cc-python39-event",
-        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
-        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
-        "{{invoke_zh}}": "s invoke -e '{\"key\":\"val\"}'",
-        "{{invoke_en}}": "s invoke -e '{\"key\":\"val\"}'"
-    },
-{
-        "{{titleName}}": "ASP.NET Core HTTP",
-        "{{appDir}}": "fc-custom-container-http-aspdotnetcore",
-        "{{appName}}": "start-fc-custom-container-http-aspdotnetcore",
-        "{{appTempDir}}": "start-cc-aspdotnetcore-http",
+        "{{titleName}}": "Golang1.x HTTP",
+        "{{appDir}}": "fc-http-golang1.x",
+        "{{appName}}": "start-fc-c-golang1.x",
+        "{{appTempDir}}": "start-fc-http-golang1.x",
         "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
         "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
         "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
         "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
     },
 {
-        "{{titleName}}": "C++ HTTP",
-        "{{appDir}}": "fc-custom-container-http-cpp",
-        "{{appName}}": "start-fc-custom-container-http-cpp",
-        "{{appTempDir}}": "start-cc-cpp-http",
-        "{{details_en}}": """This application is a case of Alibaba Cloud Function Computing Custom Container C++ Event function. If you want to improve based on this application, you can modify the two function logics in `code/sample/src/handlers/echo_handler.cpp`:
-
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize""",
-        "{{details_zh}}": """该应用是阿里云函数计算 Custom Container C++ Event 函数案例，如果想要基于该应用进行完善，可以修改`code/sample/src/handlers/echo_handler.cpp`中的两个函数逻辑即可：
-
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize""",
-        "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
-        "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+        "{{titleName}}": "Java8 HTTP",
+        "{{appDir}}": "fc-http-java8",
+        "{{appName}}": "start-fc-http-java8",
+        "{{appTempDir}}": "start-fc-http-java8",
+        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
+        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
+    "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+    "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
     },
 {
-        "{{titleName}}": "Springboot",
-        "{{appDir}}": "fc-custom-container-http-springboot",
-        "{{appName}}": "start-fc-custom-container-http-springboot",
-        "{{appTempDir}}": "start-cc-springboot",
+        "{{titleName}}": "Node.js6 HTTP",
+        "{{appDir}}": "fc-http-node.js6",
+        "{{appName}}": "start-fc-http-nodejs6",
+        "{{appTempDir}}": "start-fc-http-nodejs6",
+        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
+        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
+    "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+    "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },
+{
+        "{{titleName}}": "Node.js8 HTTP",
+        "{{appDir}}": "fc-http-node.js8",
+        "{{appName}}": "start-fc-http-nodejs8",
+        "{{appTempDir}}": "start-fc-http-nodejs8",
+        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
+        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
+    "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+    "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },
+{
+        "{{titleName}}": "Node.js10 HTTP",
+        "{{appDir}}": "fc-http-node.js10",
+        "{{appName}}": "start-fc-http-nodejs10",
+        "{{appTempDir}}": "start-fc-http-nodejs10",
+        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
+        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
+    "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+    "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },
+{
+        "{{titleName}}": "Node.js12 HTTP",
+        "{{appDir}}": "fc-http-node.js12",
+        "{{appName}}": "start-fc-http-nodejs12",
+        "{{appTempDir}}": "start-fc-http-nodejs12",
+        "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
+        "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
+    "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+    "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },{
+        "{{titleName}}": "Node.js14 HTTP",
+        "{{appDir}}": "fc-http-node.js14",
+        "{{appName}}": "start-fc-http-nodejs14",
+        "{{appTempDir}}": "start-fc-http-nodejs14",
         "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
         "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
         "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
         "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
-    },
-{
-        "{{titleName}}": "Golang Websocket",
-        "{{appDir}}": "fc-custom-container-websocket-golang",
-        "{{appName}}": "start-fc-custom-container-websocket-golang",
-        "{{appTempDir}}": "start-cc-golang-websocket",
+    },{
+        "{{titleName}}": "PHP7.2 HTTP",
+        "{{appDir}}": "fc-http-php7.2",
+        "{{appName}}": "start-fc-http-php7",
+        "{{appTempDir}}": "start-fc-http-php7",
         "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
         "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
-        "{{invoke_zh}}": "使用浏览器或者 Postman 进行调用",
-        "{{invoke_en}}": "Invoke by browser or postman"
-    },
-{
-        "{{titleName}}": "Python3.9 Websocket",
-        "{{appDir}}": "fc-custom-container-websocket-python3.9",
-        "{{appName}}": "start-fc-custom-container-websocket-python3.9",
-        "{{appTempDir}}": "start-cc-python39-websocket",
+        "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+        "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },{
+        "{{titleName}}": "Python2.7 HTTP",
+        "{{appDir}}": "fc-http-python2.7",
+        "{{appName}}": "start-fc-http-python2",
+        "{{appTempDir}}": "start-fc-http-python2",
         "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
         "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
-        "{{invoke_zh}}": "使用浏览器或者 Postman 进行调用",
-        "{{invoke_en}}": "Invoke by browser or postman"
-    },
-{
-        "{{titleName}}": "Node.js14 Websocket",
-        "{{appDir}}": "fc-custom-container-websocket-nodejs14",
-        "{{appName}}": "start-fc-custom-container-websocket-nodejs14",
-        "{{appTempDir}}": "start-cc-nodejs14-websocket",
+        "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+        "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
+    },{
+        "{{titleName}}": "Python3.6 HTTP",
+        "{{appDir}}": "fc-http-python3.6",
+        "{{appName}}": "start-fc-http-python3",
+        "{{appTempDir}}": "start-fc-http-python3",
         "{{details_en}}": "This application is only used for learning and reference. You can carry out secondary development and improvement based on this project to realize your own business logic.",
         "{{details_zh}}": "本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑",
-        "{{invoke_zh}}": "使用浏览器或者 Postman 进行调用",
-        "{{invoke_en}}": "Invoke by browser or postman"
+        "{{invoke_zh}}": "直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名",
+        "{{invoke_en}}": "Directly use POST or GET method curl to the custom domain name that is generated when deploying the project"
     }
 ]
 
-cloudshell = '''# 快速体验 Custom Container {{titleName}} 函数案例
+cloudshell = '''# 快速体验 {{titleName}} 函数案例
 
-欢迎您使用Serverless Devs开发者工具进行项目开发，本实验是基于Serverless Devs部署 Custom Container {{titleName}} 案例到阿里云函数计算。
+欢迎您使用Serverless Devs开发者工具进行项目开发，本实验是基于Serverless Devs部署 {{titleName}} 案例到阿里云函数计算。
 
 整个实验过程包括：
 - [下载工具](#下载工具)
@@ -98,7 +108,7 @@ cloudshell = '''# 快速体验 Custom Container {{titleName}} 函数案例
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/{{appDir}}/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/http-function/{{appDir}}/src)
 
 ## 下载工具
 
@@ -155,7 +165,7 @@ s init {{appName}} -d {{appTempDir}}
 
 > 有问题快来钉钉群问一下吧：33947367'''
 
-readme_en = '''# Alibaba Cloud Function Compute Custom Container {{titleName}} function case
+readme_en = '''# Alibaba Cloud Function Compute {{titleName}} function case
 
 <toc>
 
@@ -170,7 +180,7 @@ readme_en = '''# Alibaba Cloud Function Compute Custom Container {{titleName}} f
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/{{appDir}}/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/http-function/{{appDir}}/src)
 
 ## Deploy via command line tools
 
@@ -197,7 +207,7 @@ readme_en = '''# Alibaba Cloud Function Compute Custom Container {{titleName}} f
     - Help document: [https://www.serverless-devs.com/fc/readme](https://www.serverless-devs.com/fc/readme)
 - Dingding communication group: 33947367'''
 
-readme_zh = '''# 阿里云函数计算 Custom Container {{titleName}} 函数案例
+readme_zh = '''# 阿里云函数计算 {{titleName}} 函数案例
 
 <toc>
 
@@ -214,7 +224,7 @@ readme_zh = '''# 阿里云函数计算 Custom Container {{titleName}} 函数案�
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/{{appDir}}/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/http-function/{{appDir}}/src)
 
 ## 通过应用中心部署
 
@@ -238,7 +248,7 @@ readme_zh = '''# 阿里云函数计算 Custom Container {{titleName}} 函数案�
 
 ## 通过阿里云CloudShell部署
 
-如果您不想在应用中心中快速体验，也不想下载命令行工具体验，您也可以在[ :rocket:  阿里云 CloudShell](https://api.aliyun.com/new#/tutorial?action=git_open&git_repo=https://github.com/devsapp/start-fc.git&tutorial=custom-container-function/{{appDir}}/cloudshell.md) 中快速体验。
+如果您不想在应用中心中快速体验，也不想下载命令行工具体验，您也可以在[ :rocket:  阿里云 CloudShell](https://api.aliyun.com/new#/tutorial?action=git_open&git_repo=https://github.com/devsapp/start-fc.git&tutorial=http-function/{{appDir}}/cloudshell.md) 中快速体验。
 
 # 应用详情
 
