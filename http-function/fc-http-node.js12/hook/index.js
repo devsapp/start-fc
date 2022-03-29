@@ -1,20 +1,22 @@
 async function preInit(inputObj) {
-    console.log(`\n     ____  _     _ ___  _ _     _        _____ ____ 
-    /  _ \\/ \\   / \\\\  \\/// \\ /\\/ \\  /|  /    //   _\\
-    | / \\|| |   | | \\  / | | ||| |\\ ||  |  __\\|  /  
-    | |-||| |_/\\| | / /  | \\_/|| | \\||  | |   |  \\__
-    \\_/ \\|\\____/\\_//_/   \\____/\\_/  \\|  \\_/   \\____/
+    console.log(`
+  Serverless Devs Application Case
+    
+    Cloud services required：
+    - FC : https://fc.console.aliyun.com/
+    
+    Tips：
+    - Serverless Devs Version >= v2.0.103 
+    - FC Component: https://www.serverless-devs.com/fc/readme
     `)
 }
 
 async function postInit(inputObj) {
-    console.log(`\nThis application requires to open these services: 
-         FC : https://fc.console.aliyun.com/
-     
-    * Additional note: 
-      1. The Serverless Devs version required by the current project is at least v2.0.103. You can view the current version through [s -v] and upgrade the version through [npm install -g @serverless-devs/s].
-    * After the project is initialized, you can directly enter the project directory and use s deploy to deploy the project
-    \n`)
+    console.log(`
+    * Before using, please check whether the actions command in Yaml file is available
+    * Carefully reading the notes in s.yaml is helpful for the use of the tool
+    * If need help in the use process, please apply to join the Dingtalk Group: 33947367
+    `)
 }
 
 module.exports = {
