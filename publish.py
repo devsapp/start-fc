@@ -1,17 +1,6 @@
 import subprocess
 import time
 
-
-def getContent(fileList):
-    for eveFile in fileList:
-        try:
-            with open(eveFile) as f:
-                return f.read()
-        except:
-            pass
-    return None
-
-
 with open('update.list') as f:
     publish_list = [eve_app.strip() for eve_app in f.readlines()]
 
