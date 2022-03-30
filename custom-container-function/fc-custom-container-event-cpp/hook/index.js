@@ -17,6 +17,7 @@ async function preInit(inputObj) {
             console.log('\x1b[40m The application requires that the version of Serverless Devs is at least 2.0.103, you can be upgraded through [npm install -g @serverless-devs/s] \x1b[0m')
         }
     } catch (e) {
+        console.log(e)
         console.log(`    - Serverless Devs Version >= v2.0.103
         `)
     }
