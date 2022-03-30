@@ -35,7 +35,7 @@
     > 涉及到确定密钥的选择、服务名称的确定、函数名称的确定以及容器镜像的确定    
 - 进入项目：`cd fc-custom-lua-event`
 - 部署项目：`s deploy -y`
-- 调用函数：`s invoke -e "hello"`
+- 调用函数：`s invoke -e "{\"key\":\"val\"}"`
 
 ## 通过阿里云CloudShell部署
 

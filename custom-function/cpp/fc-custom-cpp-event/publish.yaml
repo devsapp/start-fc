@@ -2,7 +2,7 @@ Type: Application
 Name: fc-custom-cpp-event
 Provider:
   - 阿里云
-Version: 1.2.2
+Version: 1.2.3
 Description: 快速部署一个基于custom runtime的 C++ Event 类型的 Hello World 到阿里云函数计算
 HomePage: https://github.com/devsapp/start-fc
 Tags:
