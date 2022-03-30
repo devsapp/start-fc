@@ -7,9 +7,19 @@ async function preInit(inputObj) {
     - ACR: https://cr.console.aliyun.com/
     
     Tips：
-    - Serverless Devs Version >= v2.0.103 
-    - FC Component: https://www.serverless-devs.com/fc/readme
-    `)
+    - FC Component: https://www.serverless-devs.com/fc/readme`)
+
+    try {
+        var process = require('child_process')
+        const version = await process.execSync('s -v')
+        const versionNumber = version.stdout.match(/s: 2\.0\.(.*?),/)[1]
+        if (Number(version) < 103) {
+            console.log('\x1b[40m The application requires that the version of Serverless Devs is at least 2.0.103, you can be upgraded through [npm install -g @serverless-devs/s] \x1b[0m')
+        }
+    } catch (e) {
+        console.log(`    - Serverless Devs Version >= v2.0.103
+        `)
+    }
 }
 
 async function postInit(inputObj) {
