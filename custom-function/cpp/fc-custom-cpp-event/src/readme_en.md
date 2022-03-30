@@ -23,7 +23,7 @@
     > It involves determining the selection of the key, the determination of the service name, the determination of the function name, and the determination of the container image
 - Enter the project: `cd fc-custom-cpp-event`
 - Deploy the project: `s deploy -y`
-- Invoke function: `s invoke -e "hello"`
+- Invoke function: `s invoke -e "{\"key\":\"val\"}"`
 
 # Application details
 

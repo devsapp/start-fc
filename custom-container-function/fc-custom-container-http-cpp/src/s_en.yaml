@@ -19,7 +19,7 @@ name: hello-world-app
 # access is the key information configuration required by the current application:
 # Key configuration can refer to: https://www.serverless-devs.com/serverless-devs/command/config
 # For the order of key usage, please refer to: https://www.serverless-devs.com/serverless-devs/tool#Key usage order and specification
-access: "{{ access }}"
+# access: "{{ access }}"
 
 vars: # global variables
   region: cn-hangzhou
