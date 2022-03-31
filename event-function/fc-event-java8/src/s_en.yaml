@@ -36,7 +36,7 @@ services:
     actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
       pre-deploy:    # run before deploy
         - run: mvn package
-          path: ./code
+          path: ./
 #        - component: fc build --use-docker --dockerfile ./code/Dockerfile # The component to run, the format is [component: component name command parameter] (you can get the component list through s cli registry search --type Component)
 #        - run: docker build xxx                  # System command to execute, similar to a hook
 #          path: ./src                            # The path to execute system commands/hooks
