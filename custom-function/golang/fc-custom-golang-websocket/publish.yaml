@@ -2,7 +2,7 @@ Type: Application
 Name: fc-custom-golang-websocket
 Provider:
   - 阿里云
-Version: 0.0.7
+Version: 0.0.8
 Description: 快速部署一个基于custom runtime 的 Golang WebSocket 类型的 Echo 函数到阿里云函数计算
 HomePage: https://github.com/devsapp/start-fc
 Tags:
