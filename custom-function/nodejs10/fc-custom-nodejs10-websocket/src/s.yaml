@@ -37,7 +37,7 @@ services:
       pre-deploy:  # 在deploy之前运行
         - run: npm install
           path: ./code
-        - component: fc build --use-docker # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
+#        - component: fc build --use-docker # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
 #        - run: docker build xxx          # 要执行的系统命令，类似于一种钩子的形式
 #          path: ./src                    # 执行系统命令/钩子的路径
 #        - plugin: myplugin               # 与运行的插件 （可以通过s cli registry search --type Plugin 获取组件列表）
@@ -56,12 +56,12 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 10
-        environmentVariables:
-          PATH: /code/node-v12.13.0-linux-x64/bin:$PATH
-        customRuntimeConfig:
-          command:
-            - node
-            - server.js
+#        environmentVariables:
+#          PATH: /code/node-v12.13.0-linux-x64/bin:$PATH
+#        customRuntimeConfig:
+#          command:
+#            - node
+#            - server.js
       triggers:
         - name: http_t
           type: http
