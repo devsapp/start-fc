@@ -54,10 +54,10 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 1
-        customRuntimeConfig:
-          command:
-            - python3
-            - server.py
+#        customRuntimeConfig:
+#          command:
+#            - python3
+#            - server.py
       triggers:
         - name: http_t
           type: http
