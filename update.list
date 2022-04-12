@@ -1,1 +1,2 @@
-event-function/fc-event-java8
+custom-function/lua/fc-custom-lua-event
+custom-function/golang/fc-custom-golang-websocket
