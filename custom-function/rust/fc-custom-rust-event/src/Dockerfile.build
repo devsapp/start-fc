@@ -1,0 +1,4 @@
+FROM python:3.7.4-stretch
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y
+RUN echo 'export PATH=$HOME/.cargo/bin:$PATH' >> $HOME/.bashrc
+CMD ["bash"]
