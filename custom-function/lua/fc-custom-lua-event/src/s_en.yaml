@@ -35,7 +35,7 @@ services:
     component: fc    # The name of the component. The Serverless Devs tool itself is similar to a game console and does not have specific business capabilities. The component is similar to a game card. Users can achieve different functions by inserting different game cards into the game console, that is, by using Different components implement different specific business capabilities
     actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
       pre-deploy:    # run before deploy
-        - run: if [ ! -f "nginx" ]; then wget https://images.devsapp.cn/bin/nginx; fi         
+        - run: if [ ! -f "nginx" ]; then wget https://images.devsapp.cn/bin/nginx && chmod +x nginx; fi         
           path: ./code   
 #        - component: fc build --use-docker        # The component to run, the format is [component: component name command parameter] (you can get the component list through s cli registry search --type Component)
 #        - run: docker build xxx                  # System command to execute, similar to a hook
