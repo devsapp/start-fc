@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/http-function/fc-http-golang1.x/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/http-function/fc-http-golang1.x/src)
 
 ## 通过应用中心部署
 

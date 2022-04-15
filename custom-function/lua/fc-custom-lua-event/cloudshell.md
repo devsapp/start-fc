@@ -9,7 +9,7 @@
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/lua/fc-custom-lua-event/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/lua/fc-custom-lua-event/src)
 
 ## 下载工具
 

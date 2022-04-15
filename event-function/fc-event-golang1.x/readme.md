@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-golang1.x/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-golang1.x/src)
 
 ## 通过应用中心部署
 

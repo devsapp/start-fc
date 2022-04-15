@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/nodejs10/fc-custom-nodejs10-websocket/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/nodejs10/fc-custom-nodejs10-websocket/src)
 
 ## Deploy via command line tools
 

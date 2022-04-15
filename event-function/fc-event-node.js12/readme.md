@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-node.js12/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-node.js12/src)
 
 ## 通过应用中心部署
 

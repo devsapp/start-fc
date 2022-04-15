@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/java8/fc-custom-java8-http/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/java8/fc-custom-java8-http/src)
 
 ## 通过应用中心部署
 

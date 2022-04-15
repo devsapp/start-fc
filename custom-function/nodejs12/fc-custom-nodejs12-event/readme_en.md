@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/nodejs12/fc-custom-nodejs12-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/nodejs12/fc-custom-nodejs12-event/src)
 
 ## Deploy via command line tools
 

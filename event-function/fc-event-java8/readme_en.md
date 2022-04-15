@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-java8/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-java8/src)
 
 ## Deploy via command line tools
 

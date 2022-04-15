@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/ruby/fc-custom-ruby-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/ruby/fc-custom-ruby-event/src)
 
 ## Deploy via command line tools
 
