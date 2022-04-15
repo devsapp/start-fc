@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-websocket-python3.9/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-websocket-python3.9/src)
 
 ## 通过应用中心部署
 

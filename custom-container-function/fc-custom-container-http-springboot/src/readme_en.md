@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-http-springboot/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-http-springboot/src)
 
 ## Deploy via command line tools
 

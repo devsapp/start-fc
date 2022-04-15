@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/python37/fc-custom-python37-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/python37/fc-custom-python37-event/src)
 
 ## Deploy via command line tools
 

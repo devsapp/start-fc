@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/nodejs10/fc-custom-nodejs10-event/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/nodejs10/fc-custom-nodejs10-event/src)
 
 ## 通过应用中心部署
 

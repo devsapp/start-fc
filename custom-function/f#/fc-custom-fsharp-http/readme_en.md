@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/f#/fc-custom-fsharp-http/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/f#/fc-custom-fsharp-http/src)
 
 ## Deploy via command line tools
 

@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-function/lua/fc-custom-lua-event/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-function/lua/fc-custom-lua-event/src)
 
 ## Deploy via command line tools
 

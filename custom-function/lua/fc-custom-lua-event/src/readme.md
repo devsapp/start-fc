@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/lua/fc-custom-lua-event/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/lua/fc-custom-lua-event/src)
 
 ## 通过应用中心部署
 

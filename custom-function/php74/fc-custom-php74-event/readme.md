@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/php74/fc-custom-php74-event/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/php74/fc-custom-php74-event/src)
 
 ## 通过应用中心部署
 

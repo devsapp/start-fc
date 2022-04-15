@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-websocket-python3.9/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-websocket-python3.9/src)
 
 ## Deploy via command line tools
 

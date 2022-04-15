@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-python2.7/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-python2.7/src)
 
 ## Deploy via command line tools
 

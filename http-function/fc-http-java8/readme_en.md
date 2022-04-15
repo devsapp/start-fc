@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/http-function/fc-http-java8/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/http-function/fc-http-java8/src)
 
 ## Deploy via command line tools
 

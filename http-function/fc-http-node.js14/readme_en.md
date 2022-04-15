@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/http-function/fc-http-node.js14/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/http-function/fc-http-node.js14/src)
 
 ## Deploy via command line tools
 

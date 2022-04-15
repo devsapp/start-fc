@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/http-function/fc-http-python3.6/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/http-function/fc-http-python3.6/src)
 
 ## 通过应用中心部署
 

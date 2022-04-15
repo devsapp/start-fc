@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-node.js8/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-node.js8/src)
 
 ## Deploy via command line tools
 

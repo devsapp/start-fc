@@ -9,7 +9,7 @@
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/event-function/fc-event-node.js12/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/event-function/fc-event-node.js12/src)
 
 ## 下载工具
 

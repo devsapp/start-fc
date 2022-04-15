@@ -15,7 +15,7 @@
 
 # 快速开始
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/ruby/fc-custom-ruby-event/src)
+- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/ruby/fc-custom-ruby-event/src)
 
 ## 通过应用中心部署
 

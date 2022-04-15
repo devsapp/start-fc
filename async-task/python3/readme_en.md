@@ -13,7 +13,7 @@
 
 # Quick start
 
-- [:octocat: source](https://github.com/devsapp/start-fc/tree/master/async-task/python3/src)
+- [:octocat: source](https://github.com/devsapp/start-fc/tree/main/async-task/python3/src)
 
 ## Deploy via command line tools
 

@@ -9,7 +9,7 @@
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-container-function/fc-custom-container-websocket-python3.9/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-websocket-python3.9/src)
 
 ## 下载工具
 

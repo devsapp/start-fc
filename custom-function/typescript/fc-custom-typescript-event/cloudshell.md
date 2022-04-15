@@ -9,7 +9,7 @@
 - [部署项目](#部署项目)
 - [更多信息](#更多信息)
 
-> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/master/custom-function/typescript/fc-custom-typescript-event/src)
+> - [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/typescript/fc-custom-typescript-event/src)
 
 ## 下载工具
 
