@@ -1,6 +1,6 @@
 Type: Application
 Name: start-async-task-python3
-Version: 0.1.8
+Version: 0.1.11
 Provider:
   - 阿里云
 Description: 快速部署一个 Python 3.6 的 async task 函数到阿里云函数计算。
