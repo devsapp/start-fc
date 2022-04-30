@@ -61,32 +61,9 @@
 
 
 
+本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑
 
 
-该应用是阿里云函数计算 Custom Container C++ Event 函数案例，如果想要基于该应用进行完善，可以修改`code/sample/src/handlers/echo_handler.cpp`中的两个函数逻辑即可：
-
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize
-
-
-
-</appdetail>
-
-<devgroup>
-
-## 开发者社区
-
-您如果有关于错误的反馈或者未来的期待，您可以在 [Serverless Devs repo Issues](https://github.com/serverless-devs/serverless-devs/issues) 中进行反馈和交流。如果您想要加入我们的讨论组或者了解 FC 组件的最新动态，您可以通过以下渠道进行：
-
-<p align="center">
-
-| <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407298906_20211028074819117230.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407044136_20211028074404326599.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407252200_20211028074732517533.png" width="130px" > |
-|--- | --- | --- |
-| <center>微信公众号：\`serverless\`</center> | <center>微信小助手：\`xiaojiangwh\`</center> | <center>钉钉交流群：\`33947367\`</center> | 
-
-</p>
-
-</devgroup>
 
 </appdetail>
 

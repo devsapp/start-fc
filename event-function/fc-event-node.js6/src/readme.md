@@ -1,20 +1,20 @@
-# start-fc-custom-container-event-cpp 帮助文档
+# start-fc-event-nodejs6 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-event-nodejs6&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-event-cpp" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-event-nodejs6" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-event-nodejs6&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-event-cpp" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-event-nodejs6" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-event-nodejs6&type=packageDownload">
   </a>
 </p>
 
 <description>
 
-快速部署一个基于 Custom Container Runtime 的 C++ Event 类型的 Hello World 到阿里云函数计算
+快速部署一个 Node.JS 6 的 Event 类型的 Hello World 函数到阿里云函数计算。
 
 </description>
 
@@ -25,7 +25,7 @@
 
 | 服务/业务 | 函数计算 |     
 | --- |  --- |   
-| 权限/策略 | AliyunFCFullAccess<br/>AliyunContainerRegistryFullAccess |  
+| 权限/策略 | AliyunFCFullAccess |  
 
 </table>
 
@@ -33,7 +33,7 @@
 
 # 代码 & 预览
 
-- [😼 源代码](https://github.com/devsapp/start-fc/blob/main/custom-container-function/fc-custom-container-event-cpp)
+- [😼 源代码](https://github.com/devsapp/start-fc/blob/main/event-function/fc-event-node.js6)
 
 </codepre>
 
@@ -43,15 +43,15 @@
 
 <appcenter>
 
-- 🔥 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp) ，
-[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp)  该应用。 
+- 🔥 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-event-nodejs6) ，
+[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-event-nodejs6)  该应用。 
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 初始化项目：\`s init start-fc-custom-container-event-cpp -d start-fc-custom-container-event-cpp\`   
-    - 进入项目，并进行项目部署：\`cd start-fc-custom-container-event-cpp && s deploy -y\`
+    - 初始化项目：\`s init start-fc-event-nodejs6 -d start-fc-event-nodejs6\`   
+    - 进入项目，并进行项目部署：\`cd start-fc-event-nodejs6 && s deploy -y\`
 
 </deploy>
 
@@ -61,10 +61,7 @@
 
 
 
-该应用是阿里云函数计算 Custom Container C++ Event 函数案例，如果想要基于该应用进行完善，可以修改`code/sample/src/handlers/echo_handler.cpp`中的两个函数逻辑即可：
-
-- EchoHandler::OnInvoke
-- EchoHandler::OnInitialize
+本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑
 
 
 

@@ -1,20 +1,20 @@
-# start-fc-custom-container-event-cpp 帮助文档
+# start-fc-custom-container-http-cpp 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-cpp&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-event-cpp" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-http-cpp" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-cpp&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-event-cpp" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-event-cpp&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-http-cpp" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-cpp&type=packageDownload">
   </a>
 </p>
 
 <description>
 
-快速部署一个基于 Custom Container Runtime 的 C++ Event 类型的 Hello World 到阿里云函数计算
+快速部署一个基于custom container runtime 的 C++ HTTP 类型的 Hello World 到阿里云函数计算
 
 </description>
 
@@ -33,7 +33,7 @@
 
 # 代码 & 预览
 
-- [😼 源代码](https://github.com/devsapp/start-fc/blob/main/custom-container-function/fc-custom-container-event-cpp)
+- [😼 源代码](https://github.com/devsapp/start-fc/blob/main/custom-container-function/fc-custom-container-http-cpp)
 
 </codepre>
 
@@ -43,15 +43,15 @@
 
 <appcenter>
 
-- 🔥 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp) ，
-[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-event-cpp)  该应用。 
+- 🔥 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-cpp) ，
+[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-cpp)  该应用。 
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 初始化项目：\`s init start-fc-custom-container-event-cpp -d start-fc-custom-container-event-cpp\`   
-    - 进入项目，并进行项目部署：\`cd start-fc-custom-container-event-cpp && s deploy -y\`
+    - 初始化项目：\`s init start-fc-custom-container-http-cpp -d start-fc-custom-container-http-cpp\`   
+    - 进入项目，并进行项目部署：\`cd start-fc-custom-container-http-cpp && s deploy -y\`
 
 </deploy>
 
