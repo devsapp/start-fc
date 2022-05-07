@@ -1,6 +1,6 @@
 Type: Application
 Name: start-fc-event-java8
-Version: 1.1.23
+Version: 1.1.24
 Provider:
   - 阿里云
 Description: 快速部署一个 Java 8 的 Event 类型的 Hello World 函数到阿里云函数计算。
