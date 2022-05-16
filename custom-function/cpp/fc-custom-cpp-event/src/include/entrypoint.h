@@ -31,7 +31,8 @@ int main(int argc, char *argv[]) {
 
     auto opts = Http::Endpoint::options()
         .threads(thr)
-        .flags(Tcp::Options::InstallSignalHandler);
+        .flags(Tcp::Options::InstallSignalHandler)
+        .maxPayload(6*1024*1024);
     server->init(opts);
     SetInvokeAndInitHander();
     server->setHandler(Http::make_handler<CustomRuntimeHandler>());

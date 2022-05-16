@@ -1,57 +1,84 @@
-# 阿里云函数计算 Custom Container ASP.NET Core HTTP 函数案例
+# start-fc-custom-container-http-aspdotnetcore 帮助文档
 
-<toc>
+<p align="center" class="flex justify-center">
+    <a href="https://www.serverless-devs.com" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-aspdotnetcore&type=packageType">
+  </a>
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-http-aspdotnetcore" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-aspdotnetcore&type=packageVersion">
+  </a>
+  <a href="http://www.devsapp.cn/details.html?name=start-fc-custom-container-http-aspdotnetcore" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc-custom-container-http-aspdotnetcore&type=packageDownload">
+  </a>
+</p>
 
-<p align="center"><b> 中文 | <a href="./readme_en.md"> English </a>  </b></p>
+<description>
 
-- [快速开始](#快速开始)
-    - [通过应用中心部署](#通过应用中心部署)
-    - [通过命令行工具部署](#通过命令行工具部署)
-    - [通过阿里云CloudShell部署](#通过阿里云CloudShell部署)
-- [应用详情](#应用详情)
-- [关于我们](#关于我们)
+快速部署一个基于custom container runtime 的 asp .netcore HTTP 类型的 Hello World 到阿里云函数计算
 
-</toc>
+</description>
 
-# 快速开始
+<table>
 
-- [:octocat: 源代码](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-http-aspdotnetcore/src)
+## 前期准备
+使用该项目，推荐您拥有以下的产品权限 / 策略：
 
-## 通过应用中心部署
+| 服务/业务 | 函数计算 |     
+| --- |  --- |   
+| 权限/策略 | AliyunFCFullAccess<br/>AliyunContainerRegistryFullAccess |  
+
+</table>
+
+<codepre id="codepre">
+
+# 代码 & 预览
+
+- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/custom-container-function/fc-custom-container-http-aspdotnetcore)
+
+</codepre>
+
+<deploy>
+
+## 部署 & 体验
 
 <appcenter>
 
-您可以在阿里云 [:earth_asia: Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-aspdotnetcore) ，快速体验该应用：   
-
-[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-aspdotnetcore) 
+-  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-aspdotnetcore) ，
+[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc-custom-container-http-aspdotnetcore)  该应用。 
 
 </appcenter>
 
-## 通过命令行工具部署
+- 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
+    - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
+    - 初始化项目：`s init start-fc-custom-container-http-aspdotnetcore -d start-fc-custom-container-http-aspdotnetcore`   
+    - 进入项目，并进行项目部署：`cd start-fc-custom-container-http-aspdotnetcore && s deploy -y`
 
-> 在开始之前，需要先安装 Serverless Devs 开发者工具：`npm install @serverless-devs/s -g`，更多安装方法，可以参考[Serverless Devs 安装文档](https://www.serverless-devs.com/serverless-devs/install) ，针对阿里云还需要配置密钥信息，配置密钥信息的方法可以参考[阿里云密钥配置文档](https://www.serverless-devs.com/fc/config)
+</deploy>
 
-- 初始化项目：`s init start-fc-custom-container-http-aspdotnetcore -d start-cc-aspdotnetcore-http`    
-    > 涉及到确定密钥的选择、服务名称的确定、函数名称的确定以及容器镜像的确定    
-- 进入项目：`cd start-cc-aspdotnetcore-http`
-- 部署项目：`s deploy -y`
-- 调用函数：直接使用 POST 或者 GET 方法 curl 部署项目时候生成自定义域名
-
-## 通过阿里云CloudShell部署
-
-如果您不想在应用中心中快速体验，也不想下载命令行工具体验，您也可以在[ :rocket:  阿里云 CloudShell](https://api.aliyun.com/new#/tutorial?action=git_open&git_repo=https://github.com/devsapp/start-fc.git&tutorial=custom-container-function/fc-custom-container-http-aspdotnetcore/cloudshell.md) 中快速体验。
+<appdetail id="flushContent">
 
 # 应用详情
 
+
+
 本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑
 
-# 关于我们
 
-- Serverless Devs 工具：
-    - 仓库：[https://www.github.com/serverless-devs/serverless-devs](https://www.github.com/serverless-devs/serverless-devs)    
-      > 欢迎帮我们增加一个 :star2: 
-    - 官网：[https://www.serverless-devs.com/](https://www.serverless-devs.com/)
-- 阿里云函数计算组件：
-    - 仓库：[https://github.com/devsapp/fc](https://github.com/devsapp/fc)
-    - 帮助文档：[https://www.serverless-devs.com/fc/readme](https://www.serverless-devs.com/fc/readme)
-- 钉钉交流群：33947367    
+
+</appdetail>
+
+<devgroup>
+
+## 开发者社区
+
+您如果有关于错误的反馈或者未来的期待，您可以在 [Serverless Devs repo Issues](https://github.com/serverless-devs/serverless-devs/issues) 中进行反馈和交流。如果您想要加入我们的讨论组或者了解 FC 组件的最新动态，您可以通过以下渠道进行：
+
+<p align="center">
+
+| <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407298906_20211028074819117230.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407044136_20211028074404326599.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407252200_20211028074732517533.png" width="130px" > |
+|--- | --- | --- |
+| <center>微信公众号：`serverless`</center> | <center>微信小助手：`xiaojiangwh`</center> | <center>钉钉交流群：`33947367`</center> | 
+
+</p>
+
+</devgroup>
