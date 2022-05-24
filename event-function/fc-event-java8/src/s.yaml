@@ -52,7 +52,7 @@ services:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
         runtime: java8
-        codeUri: ./target
+        codeUri: ./target/HelloFCJava-1.0-SNAPSHOT-jar-with-dependencies.jar
         handler: example.App::handleRequest
         memorySize: 128
         timeout: 60
