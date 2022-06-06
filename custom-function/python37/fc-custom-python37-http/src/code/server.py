@@ -52,7 +52,8 @@ def event():
             "stack": trace
         }
         print(errRet)
-        print("FC Invoke End RequestId: " + rid)
+        print("FC Invoke End RequestId: " + rid +
+              ", Error: Unhandled function error")
         return errRet, 404, [("x-fc-status", "404")]
 
     print("FC Invoke End RequestId: " + rid)

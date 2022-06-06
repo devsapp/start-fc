@@ -1,2 +1,2 @@
-event-function/fc-event-java8
-http-function/fc-http-java8
+custom-function/python37/fc-custom-python37-event
+custom-function/python37/fc-custom-python37-http
