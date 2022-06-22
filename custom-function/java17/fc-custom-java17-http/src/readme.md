@@ -33,7 +33,7 @@
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/custom-function/java8/fc-custom-java17-http)
+- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/tree/main/custom-function/java17/fc-custom-java17-http/src)
 
 </codepre>
 
