@@ -16,9 +16,9 @@
 // versions:
 // 	protoc-gen-go v1.28.0
 // 	protoc        v3.19.4
-// source: helloworld.proto
+// source: proto.proto
 
-package helloworld
+package proto
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -525,27 +525,27 @@ func file_helloworld_proto_rawDescGZIP() []byte {
 
 var file_helloworld_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_helloworld_proto_goTypes = []interface{}{
-	(*HelloRequest)(nil), // 0: helloworld.HelloRequest
-	(*HelloReply)(nil),   // 1: helloworld.HelloReply
-	(*Point)(nil),        // 2: helloworld.Point
-	(*Rectangle)(nil),    // 3: helloworld.Rectangle
-	(*Feature)(nil),      // 4: helloworld.Feature
-	(*RouteNote)(nil),    // 5: helloworld.RouteNote
-	(*RouteSummary)(nil), // 6: helloworld.RouteSummary
+	(*HelloRequest)(nil), // 0: proto.HelloRequest
+	(*HelloReply)(nil),   // 1: proto.HelloReply
+	(*Point)(nil),        // 2: proto.Point
+	(*Rectangle)(nil),    // 3: proto.Rectangle
+	(*Feature)(nil),      // 4: proto.Feature
+	(*RouteNote)(nil),    // 5: proto.RouteNote
+	(*RouteSummary)(nil), // 6: proto.RouteSummary
 }
 var file_helloworld_proto_depIdxs = []int32{
-	2, // 0: helloworld.Rectangle.lo:type_name -> helloworld.Point
-	2, // 1: helloworld.Rectangle.hi:type_name -> helloworld.Point
-	2, // 2: helloworld.Feature.location:type_name -> helloworld.Point
-	2, // 3: helloworld.RouteNote.location:type_name -> helloworld.Point
-	0, // 4: helloworld.Greeter.SayHello:input_type -> helloworld.HelloRequest
-	3, // 5: helloworld.Greeter.ListFeatures:input_type -> helloworld.Rectangle
-	2, // 6: helloworld.Greeter.RecordRoute:input_type -> helloworld.Point
-	5, // 7: helloworld.Greeter.RouteChat:input_type -> helloworld.RouteNote
-	1, // 8: helloworld.Greeter.SayHello:output_type -> helloworld.HelloReply
-	4, // 9: helloworld.Greeter.ListFeatures:output_type -> helloworld.Feature
-	6, // 10: helloworld.Greeter.RecordRoute:output_type -> helloworld.RouteSummary
-	5, // 11: helloworld.Greeter.RouteChat:output_type -> helloworld.RouteNote
+	2, // 0: proto.Rectangle.lo:type_name -> proto.Point
+	2, // 1: proto.Rectangle.hi:type_name -> proto.Point
+	2, // 2: proto.Feature.location:type_name -> proto.Point
+	2, // 3: proto.RouteNote.location:type_name -> proto.Point
+	0, // 4: proto.Greeter.SayHello:input_type -> proto.HelloRequest
+	3, // 5: proto.Greeter.ListFeatures:input_type -> proto.Rectangle
+	2, // 6: proto.Greeter.RecordRoute:input_type -> proto.Point
+	5, // 7: proto.Greeter.RouteChat:input_type -> proto.RouteNote
+	1, // 8: proto.Greeter.SayHello:output_type -> proto.HelloReply
+	4, // 9: proto.Greeter.ListFeatures:output_type -> proto.Feature
+	6, // 10: proto.Greeter.RecordRoute:output_type -> proto.RouteSummary
+	5, // 11: proto.Greeter.RouteChat:output_type -> proto.RouteNote
 	8, // [8:12] is the sub-list for method output_type
 	4, // [4:8] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name

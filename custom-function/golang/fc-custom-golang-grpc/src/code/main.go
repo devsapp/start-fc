@@ -35,7 +35,7 @@ import (
 	"github.com/golang/protobuf/proto"
 
 	"google.golang.org/grpc"
-	pb "tmp/helloworld"
+	pb "tmp/proto"
 )
 
 var (
@@ -43,7 +43,7 @@ var (
 	jsonDBFile = flag.String("json_db_file", "", "A json file containing a list of features")
 )
 
-// server is used to implement helloworld.GreeterServer.
+// server is used to implement proto.GreeterServer.
 type server struct {
 	pb.UnimplementedGreeterServer
 	savedFeatures []*pb.Feature
@@ -51,7 +51,7 @@ type server struct {
 	routeNotes    map[string][]*pb.RouteNote
 }
 
-// SayHello implements helloworld.GreeterServer
+// SayHello implements proto.GreeterServer
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	log.Printf("Received: %v", in.GetName())
 	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil

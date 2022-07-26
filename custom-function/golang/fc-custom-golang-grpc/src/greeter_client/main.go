@@ -32,7 +32,7 @@ import (
 	"math/rand"
 	"time"
 
-	pb "grpc_demo_3/helloworld"
+	pb "grpc_demo_3/proto"
 )
 
 const (
