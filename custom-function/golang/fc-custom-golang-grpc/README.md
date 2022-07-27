@@ -40,15 +40,8 @@
 <deploy>
 
 
-## 集群测试
-- 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
-    - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 配置好集群测试信息
-    - 进入项目，并进行项目部署：`cd fc-custom-golang-grpc && s deploy -y` 后获得url
-    - sudo vim /etc/hosts 配置 集群ip url
-    - 调用client端向部署在集群的server端发送信息并且收到回复:`go run ./client -addr {url}:{port}`
 
-## 部署 & 体验（待上线）
+## 部署 & 体验
 
 <appcenter>
 
@@ -59,8 +52,10 @@
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 初始化项目：
-    - 进入项目，并进行项目部署：`cd fc-custom-golang-grpc && s deploy -y`
+    - 获取项目：`git clone https://github.com/devsapp/start-fc.git`
+    - 进入项目，并进行项目部署：`cd /start-fc/custom-function/golang/fc-custom-golang-grpc && s deploy -y`后获得url
+    - 调用client端向server端发起请求并且获得相应结果：`go run ./client -addr {url}:{port}`
+    - 若要修改配置，参考用户文档
 
 </deploy>
 
