@@ -53,8 +53,8 @@
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
     - 获取项目：`git clone https://github.com/devsapp/start-fc.git`
-    - 进入项目，并进行项目部署：`cd /start-fc/custom-function/golang/fc-custom-golang-grpc && s deploy -y`后获得url
-    - 调用client端向server端发起请求并且获得相应结果：`go run ./client -addr {url}:{port}`
+    - 进入项目，并进行项目部署：`cd /start-fc/custom-function/golang/fc-custom-golang-grpc/src && make deploy `直接部署到函数计算，http_trigger会生成访问用的url
+    - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./client -addr {url}:8089`
     - 若要修改配置，参考用户文档
 
 </deploy>
