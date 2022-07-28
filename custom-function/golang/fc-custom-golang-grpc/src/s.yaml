@@ -1,0 +1,47 @@
+edition: 1.0.0
+name: fc-go_demo-fc_go
+access: test
+vars:
+  service:
+    name: custom-grpc-demo
+    description: 'grpc demo by serverless devs'
+services:
+  custom-demo:
+    component: devsapp/fc
+    props:
+      region: cn-shanghai
+      service:
+        name: grpc-demo
+        description: grpc demo
+        internetAccess: true
+        logConfig:
+          project: congxiao-dev
+          logstore: function-log
+      function:
+        name: go-grpc
+        handler: main.handler
+        timeout: 5
+        memorySize: 512
+        runtime: custom
+        codeUri: ./code
+        instanceConcurrency: 3
+        caPort: 8089
+      triggers:
+        - name: http2Trigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+      customDomains:
+        - domainName: auto
+          protocol: HTTP,HTTPS
+          routeConfigs:
+            - path: /a
+              serviceName: custom-demo
+              functionName: go-grpc
+          certConfig:
+            certName: huasan1
+            certificate: ./certificate
+            privateKey: ./privatekey
