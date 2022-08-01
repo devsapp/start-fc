@@ -32,7 +32,7 @@ import (
 	"math/rand"
 	"time"
 
-	pb "../proto"
+	pb "fc-custom-golang-grpc/proto"
 )
 
 const (
