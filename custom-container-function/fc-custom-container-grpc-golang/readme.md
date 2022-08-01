@@ -14,7 +14,7 @@
 
 <description>
 
-快速部署一个基于custom container runtime 的 Golang grpc demo
+快速部署一个基于custom container runtime 的 Golang grpc demo，该demo实现了grpc的四种通信模式:简单RPC，服务器流式RPC，客户端流式RPC，双向流式RPC
 
 </description>
 
@@ -57,6 +57,7 @@
   - 按照yaml文件规范，配置好yaml文件
   - 通过s工具进行部署:`s deploy`,http trigger 会生成一个url
   - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./client -addr {url}:8089`
+  - client代码中不同的函数对应不同的通信方式：GreetingHello对应简单RPC，printFeatures对应服务器流式RPC，runRecordRoute对应客户端流式RPC，runRouteChat对应双向流式RPC。要体验不同的通信模式，将client端代码中相应的函数取消注释即可
   - 若要修改配置，参考用户文档
 
 </deploy>

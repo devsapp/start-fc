@@ -51,11 +51,11 @@
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
-  - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-  - 获取项目：`s init fc-custom-golang-grpc -d fc-custom-golang-grpc`
-  - 进入项目，并进行项目部署：`cd  fc-custom-golang-grpc && s deploy -y `直接部署到函数计算，http_trigger会生成访问用的url(默认是`test.grpcHelloWorld`)
-  - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./greeter_client -addr {url}:8089`
-  - 若要修改配置，参考用户文档
+    - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
+    - 获取项目：`s init fc-custom-golang-grpc -d fc-custom-golang-grpc`
+    - 进入项目，并进行项目部署：`cd  fc-custom-golang-grpc && s deploy -y `直接部署到函数计算，http_trigger会生成访问用的url(默认是`test.grpcHelloWorld`)
+    - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./greeter_client -addr {url}:8089`
+    - 若要修改配置，参考用户文档
 
 </deploy>
 
