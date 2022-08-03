@@ -80,3 +80,17 @@ services:
             certName: huasan1
             certificate: ./certificate
             privateKey: ./privatekey
+#  next-function: # 第二个函数的案例，仅供参考
+#    # 如果在当前项目下执行 s deploy，会同时部署模块：
+#    #   helloworld：服务hello-world-service，函数cpp-event-function
+#    #   next-function：服务hello-world-service，函数next-function-example
+#    # 如果想单独部署当前服务与函数，可以执行 s + 模块名/业务名 + deploy，例如：s next-function deploy
+#    # 如果想单独部署当前函数，可以执行 s + 模块名/业务名 + deploy function，例如：s next-function deploy function
+#    # 更多命令可参考：https://www.serverless-devs.com/fc/readme#文档相关
+#    component: fc
+#    props:
+#      region: ${vars.region}
+#      service: ${vars.service} # 应用整体的服务配置
+#      function: # 定义一个新的函数
+#        name: next-function-example
+#        description: 'hello world by serverless devs'
