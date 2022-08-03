@@ -51,12 +51,9 @@
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-  - 获取项目：`git clone https://github.com/devsapp/start-fc.git`
-  - 进入项目，：`cd /start-fc/custom-container-function/fc-custom-container-grpc-golang/src`
-  - 构建镜像`docker build -t {tag} -f ./code/Dockerfile .`,然后push到您的镜像仓库中`docker push -t {tag}`
-  - 按照yaml文件规范，配置好yaml文件
-  - 通过s工具进行部署:`s deploy`,http trigger 会生成一个url
-  - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./client -addr {url}:8089`
+  - 获取项目：`s init start-fc-custom-container-grpc-golang -d start-fc-custom-container-grpc-golang`
+  - 进入项目，：`cd start-fc-custom-container-grpc-golang && s deploy -y`,http trigger 会生成一个url
+  - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./greeter_client -addr {url}:8089`
   - client代码中不同的函数对应不同的通信方式：GreetingHello对应简单RPC，printFeatures对应服务器流式RPC，runRecordRoute对应客户端流式RPC，runRouteChat对应双向流式RPC。要体验不同的通信模式，将client端代码中相应的函数取消注释即可
   - 若要修改配置，参考用户文档
 
