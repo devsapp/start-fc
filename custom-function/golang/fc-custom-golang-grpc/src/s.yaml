@@ -1,26 +1,61 @@
+# ------------------------------------
+#   If you need English case, you can refer to [s_en.yaml] file
+# ------------------------------------
+#   欢迎您使用阿里云函数计算 FC 组件进行项目开发
+#   组件仓库地址：https://github.com/devsapp/fc
+#   组件帮助文档：https://www.serverless-devs.com/fc/readme
+#   Yaml参考文档：https://www.serverless-devs.com/fc/yaml/readme
+#   关于：
+#      - Serverless Devs和FC组件的关系、如何声明/部署多个函数、超过50M的代码包如何部署
+#      - 关于.fcignore使用方法、工具中.s目录是做什么、函数进行build操作之后如何处理build的产物
+#   等问题，可以参考文档：https://www.serverless-devs.com/fc/tips
+#   关于如何做CICD等问题，可以参考：https://www.serverless-devs.com/serverless-devs/cicd
+#   关于如何进行环境划分等问题，可以参考：https://www.serverless-devs.com/serverless-devs/extend
+#   更多函数计算案例，可参考：https://github.com/devsapp/awesome/
+#   有问题快来钉钉群问一下吧：33947367
+# ------------------------------------
 edition: 1.0.0
-name: fc-go_demo-fc_go
-access: test
-vars:
+name: hello-world-app
+# access 是当前应用所需要的密钥信息配置：
+# 密钥配置可以参考：https://www.serverless-devs.com/serverless-devs/command/config
+# 密钥使用顺序可以参考：https://www.serverless-devs.com/serverless-devs/tool#密钥使用顺序与规范
+access: "{{ access }}"
+
+vars: # 全局变量
+  region: "{{ region }}"
   service:
-    name: custom-grpc-demo
-    description: 'grpc demo by serverless devs'
+    name: "{{ serviceName }}"
+    description: 'hello world by serverless devs'
+    internetAccess: true
+
 services:
-  custom-demo:
-    component: devsapp/fc
+  helloworld: # 业务名称/模块名称
+    # 如果只想针对 helloworld 下面的业务进行相关操作，可以在命令行中加上 helloworld，例如：
+    # 只对helloworld进行构建：s helloworld build
+    # 如果不带有 helloworld ，而是直接执行 s build，工具则会对当前Yaml下，所有和 helloworld 平级的业务模块（如有其他平级的模块，例如下面注释的next-function），按照一定顺序进行 build 操作
+    component: fc
+    actions: # 自定义执行逻辑，关于actions 的使用，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#行为描述
+      pre-deploy: # 在deploy之前运行
+        - run: make build
+          path: ./
+    #        - component: fc build --use-docker --dockerfile ./code/Dockerfile  # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
+    #        - run: docker build xxx          # 要执行的系统命令，类似于一种钩子的形式
+    #          path: ./src                    # 执行系统命令/钩子的路径
+    #        - plugin: myplugin               # 与运行的插件 （可以通过s cli registry search --type Plugin 获取组件列表）
+    #          args:                          # 插件的参数信息
+    #            testKey: testValue
+    #      post-deploy: # 在deploy之后运行
+    #        - component: fc versions publish # 要运行的命令行
     props:
       region: cn-shanghai
-      service:
-        name: grpc-demo
-        description: grpc demo
-        internetAccess: true
-        logConfig:
-          project: congxiao-dev
-          logstore: function-log
+      service: ${vars.service}
+#        logConfig:
+#          project: congxiao-dev
+#          logstore: function-log
       function:
-        name: go-grpc
-        handler: main.handler
-        timeout: 5
+        name: "{{ functionName }}"
+        description: 'hello world by serverless devs'
+        timeout: 30
         memorySize: 512
         runtime: custom
         codeUri: ./code
@@ -35,12 +70,12 @@ services:
               - GET
               - POST
       customDomains:
-        - domainName: auto
+        - domainName: test.grpcHelloWorld
           protocol: HTTP,HTTPS
           routeConfigs:
-            - path: /a
-              serviceName: custom-demo
-              functionName: go-grpc
+            - path: /*
+              serviceName: "{{ serviceName }}"
+              functionName: "{{ functionName }}"
           certConfig:
             certName: huasan1
             certificate: ./certificate
