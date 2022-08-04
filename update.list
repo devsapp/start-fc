@@ -1,8 +1,1 @@
-custom-container-function/fc-custom-container-event-cpp
-custom-container-function/fc-custom-container-event-nodejs14
-custom-container-function/fc-custom-container-event-python3.9
-custom-container-function/fc-custom-container-http-aspdotnetcore
-custom-container-function/fc-custom-container-http-cpp
-custom-container-function/fc-custom-container-websocket-golang
-custom-container-function/fc-custom-container-websocket-nodejs14
-custom-container-function/fc-custom-container-websocket-python3.9
+custom-container-function/fc-custom-container-http-springboot
