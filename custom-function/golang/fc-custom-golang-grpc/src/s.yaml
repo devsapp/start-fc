@@ -70,7 +70,7 @@ services:
               - GET
               - POST
       customDomains:
-        - domainName: test.grpcHelloWorld
+        - domainName: auto
           protocol: HTTP,HTTPS
           routeConfigs:
             - path: /*
