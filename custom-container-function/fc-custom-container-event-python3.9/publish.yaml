@@ -2,7 +2,7 @@ Type: Application
 Name: start-fc-custom-container-event-python3.9
 Provider:
   - 阿里云
-Version: 1.2.13
+Version: 1.2.14
 Description: 快速部署一个基于custom container runtime 的 python3.9  Event 类型的 Hello World 到阿里云函数计算
 HomePage: https://github.com/devsapp/start-fc
 Tags:
@@ -65,3 +65,5 @@ Parameters:
       type: string
       examples: ['registry.cn-hangzhou.aliyuncs.com/fc-demo/custom-python39-event-function:v0.1']
       description: 镜像仓库地址，需要在 https://cr.console.aliyun.com/ 中开通服务、创建仓库以及设置访问凭证
+      x-acr:
+        type: 'select'
