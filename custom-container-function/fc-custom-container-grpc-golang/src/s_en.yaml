@@ -15,7 +15,7 @@
 #   If you have any questions, please come to the DingTalk group and ask: 33947367
 # ------------------------------------
 edition: 1.0.0
-name: fc-go_demo-fc_go
+name: hello-world-app
 # access is the key information configuration required by the current application:
 # Key configuration can refer to: https://www.serverless-devs.com/serverless-devs/command/config
 # For the order of key usage, please refer to: https://www.serverless-devs.com/serverless-devs/tool#Key usage order and specification
