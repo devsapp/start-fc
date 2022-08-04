@@ -49,7 +49,7 @@ services:
     #      post-deploy:                               # run after deploy
     #        - component: fc versions publish         # command line to run
     props:
-      region: cn-shanghai
+      region: ${vars.region}
       service: ${vars.service}
       #        logConfig:
       #          project: congxiao-dev

@@ -47,7 +47,7 @@ services:
     #      post-deploy: # 在deploy之后运行
     #        - component: fc versions publish # 要运行的命令行
     props:
-      region: cn-shanghai
+      region: ${vars.region}
       service: ${vars.service}
 #        logConfig:
 #          project: congxiao-dev
