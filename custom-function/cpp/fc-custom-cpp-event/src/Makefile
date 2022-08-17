@@ -1,8 +1,5 @@
-build-img:
-	docker build -t fc-cpp-runtime  -f build-image/Dockerfile build-image
-
-build: build-img
-	docker run --rm -it -v $$(pwd):/tmp fc-cpp-runtime bash -c "cd /tmp && ./build.sh"
+build: 
+	docker run --rm -it -v $$(pwd):/tmp aliyunfc/runtime-custom:build bash -c "cd /tmp && ./build.sh"
 
 deploy: build
 	s deploy -y
