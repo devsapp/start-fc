@@ -38,6 +38,7 @@
   - Golang 
     - Event函数（事件函数） [fc-custom-golang-event](custom-function/golang/fc-custom-golang-event/src):`s init fc-custom-golang-event`
     - Websocket案例 [fc-custom-golang-websocket](custom-function/golang/fc-custom-golang-websocket/src):`s init fc-custom-golang-websocket`
+    - Grpc 案例 [fc-custom-golang-grpc](custom-function/golang/fc-custom-golang-grpc/src):`s init fc-custom-golang-grpc`
   - Nodejs10 
     - Event函数（事件函数） [fc-custom-nodejs10-event](custom-function/nodejs10/fc-custom-nodejs10-event/src):`s init fc-custom-nodejs10-event`
     - Websocket案例 [fc-custom-nodejs10-websocket](custom-function/nodejs10/fc-custom-nodejs10-websocket/src):`s init fc-custom-nodejs10-websocket`
@@ -75,6 +76,8 @@
       - [fc-custom-container-websocket-golang](custom-container-function/fc-custom-container-websocket-golang/src):`s init start-fc-custom-container-websocket-golang`
       - [fc-custom-container-websocket-nodejs14](custom-container-function/fc-custom-container-websocket-nodejs14/src):`s init start-fc-custom-container-websocket-nodejs14`
       - [fc-custom-container-websocket-python3.9](custom-container-function/fc-custom-container-websocket-python3.9/src):`s init start-fc-custom-container-websocket-python3.9`
+  - Grpc案例
+      - [fc-custom-container-grpc-golang](custom-container-function/fc-custom-container-grpc-golang/src):`s init start-grpc-custom-container-grpc-golang`
 - 任务
   - [Python3](async-task/python3/src):`s init start-async-task-python3`
 
