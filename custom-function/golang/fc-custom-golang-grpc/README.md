@@ -54,6 +54,7 @@
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
   - 获取项目：`s init fc-custom-golang-grpc -d fc-custom-golang-grpc`
   - 进入项目，并进行项目部署：`cd  fc-custom-golang-grpc && s deploy -y `直接部署到函数计算，http_trigger会生成访问用的url
+  - 安装运行client需要的依赖：`go mod vendor `
   - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./greeter_client -addr {url}:8089`
   - client代码中不同的函数对应不同的通信方式：GreetingHello对应简单RPC，printFeatures对应服务器流式RPC，runRecordRoute对应客户端流式RPC，runRouteChat对应双向流式RPC。要体验不同的通信模式，将client端代码中相应的函数取消注释即可
   - 若要修改配置，参考用户文档
