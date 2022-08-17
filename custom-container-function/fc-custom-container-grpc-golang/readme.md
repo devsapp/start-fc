@@ -1,4 +1,4 @@
-# fc-custom-golang-grpc 帮助文档
+# start-fc-custom-container-grpc-golang 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
@@ -14,7 +14,7 @@
 
 <description>
 
-快速部署一个基于custom runtime 的 Golang grpc demo
+快速部署一个基于custom container runtime 的 Golang grpc demo，该demo实现了grpc的四种通信模式:简单RPC，服务器流式RPC，客户端流式RPC，双向流式RPC
 
 </description>
 
@@ -25,15 +25,14 @@
 
 | 服务/业务 | 函数计算 |     
 | --- |  --- |   
-| 权限/策略 | AliyunFCFullAccess |  
-
+| 权限/策略 | AliyunFCFullAccess<br/>AliyunContainerRegistryFullAccess |  
 </table>
 
 <codepre id="codepre">
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/custom-function/golang/fc-custom-golang-grpc)
+- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/tree/main/custom-container-function/fc-custom-container-grpc-golang)
 
 </codepre>
 
@@ -45,16 +44,15 @@
 
 <appcenter>
 
--  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-grpc) ，
-   [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-grpc)  该应用。
+-  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-container-grpc-golang) ，
+   [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-container-grpc-golang)  该应用。
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-  - 获取项目：`s init fc-custom-golang-grpc -d fc-custom-golang-grpc`
-  - 进入项目，并进行项目部署：`cd  fc-custom-golang-grpc && s deploy -y `直接部署到函数计算，http_trigger会生成访问用的url
-  - 安装运行client需要的依赖：`go mod vendor `
+  - 获取项目：`s init start-fc-custom-container-grpc-golang -d start-fc-custom-container-grpc-golang`
+  - 进入项目，：`cd start-fc-custom-container-grpc-golang && s deploy -y`,http trigger 会生成一个url
   - 调用client端，使用上一步生成的url，向server端发起请求并且获得相应结果：`go run ./greeter_client -addr {url}:8089`
   - client代码中不同的函数对应不同的通信方式：GreetingHello对应简单RPC，printFeatures对应服务器流式RPC，runRecordRoute对应客户端流式RPC，runRouteChat对应双向流式RPC。要体验不同的通信模式，将client端代码中相应的函数取消注释即可
   - 若要修改配置，参考用户文档
