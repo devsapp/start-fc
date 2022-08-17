@@ -1,5 +1,5 @@
 Type: Application
-Name: fc-custom-container-grpc-golang
+Name: start-grpc-custom-container-grpc-golang
 Provider:
   - 阿里云
 Version: 0.0.2
