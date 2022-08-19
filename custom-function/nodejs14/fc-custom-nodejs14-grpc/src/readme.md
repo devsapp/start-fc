@@ -4,10 +4,10 @@
     <a href="https://www.serverless-devs.com" class="ml-1">
     <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=fc-custom-nodejs-event" class="ml-1">
+  <a href="http://www.devsapp.cn/details.html?name=fc-custom-nodejs14-grpc" class="ml-1">
     <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=fc-custom-nodejs-event" class="ml-1">
+  <a href="http://www.devsapp.cn/details.html?name=fc-custom-nodejs14-grpc" class="ml-1">
     <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageDownload">
   </a>
 </p>
@@ -34,7 +34,7 @@
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](../fc-custom-nodejs-grpc)
+- [ :smiley_cat:  源代码](../fc-custom-nodejs14-grpc)
 
 </codepre>
 
@@ -46,14 +46,14 @@
 
 <appcenter>
 
--  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-nodejs-grpc) ，
-   [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-nodejs-grpc)  该应用。
+-  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-nodejs14-grpc) ，
+   [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-nodejs14-grpc)  该应用。
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 获取项目并且填入相关信息：`s init fc-custom-nodejs-grpc -d fc-custom-nodejs-grpc`
+    - 获取项目并且填入相关信息：`s init fc-custom-nodejs-grpc -d fc-custom-nodejs-grpc`,自定义域名需要绑定账号对应region的fc endpoint
     - 进入项目`cd fc-custom-nodejs-grpc`，将您的server端证书，server端私钥，ca根证书复制到当前目录，修改s.yaml中的 `certificate: .\xxxxxx.pem  privateKey: .\xxxxxxkey.pem`
     - 进行项目部署：`cd  fc-custom-nodejs-grpc && s deploy -y `直接部署到函数计算，目前只支持自定义域名
     - `cd code`进入代码目录，修改client端代码填入自定义域名`target = '你的自定义域名:8089';`
