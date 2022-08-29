@@ -19,7 +19,7 @@ name: hello-world-app
 # access 是当前应用所需要的密钥信息配置：
 # 密钥配置可以参考：https://www.serverless-devs.com/serverless-devs/command/config
 # 密钥使用顺序可以参考：https://www.serverless-devs.com/serverless-devs/tool#密钥使用顺序与规范
-access: "{{ access }}"
+access: {{ access }}
 
 vars: # 全局变量
   region: "{{ region }}"
@@ -58,14 +58,14 @@ services:
         timeout: 30
         memorySize: 512
         runtime: custom
-        codeUri: ./
+        codeUri: ./code
         instanceConcurrency: 3
         caPort: 8089
         customRuntimeConfig:
           command:
             - python
           args:
-            - './code/greeter_server.py'
+            - 'greeter_server.py'
       triggers:
         - name: http2Trigger
           type: http
@@ -82,7 +82,7 @@ services:
               serviceName: "{{ serviceName }}"
               functionName: "{{ functionName }}"
           certConfig:
-            certName: grpc demo
+            certName: grpcdemo
             certificate:                        #你的域名对应的server端的证书
             privateKey:                         #你的域名对应的server端的私钥
 #  next-function: # 第二个函数的案例，仅供参考
