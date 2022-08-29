@@ -82,7 +82,7 @@ services:
               serviceName: "{{ serviceName }}"
               functionName: "{{ functionName }}"
           certConfig:
-            certName: grpc demo
+            certName: grpcdemo
             certificate:                        #你的域名对应的server端的证书
             privateKey:                         #你的域名对应的server端的私钥
 #  next-function: # 第二个函数的案例，仅供参考
