@@ -49,9 +49,6 @@ services:
     props:
       region: ${vars.region}
       service: ${vars.service}
-#        logConfig:
-#          project: congxiao-dev
-#          logstore: function-log
       function:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
