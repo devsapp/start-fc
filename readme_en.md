@@ -75,11 +75,14 @@ With this application, you can easily and quickly create an FC case to Alibaba C
       - [fc-custom-container-websocket-golang](custom-container-function/fc-custom-container-websocket-golang/src):`s init start-fc-custom-container-websocket-golang`
       - [fc-custom-container-websocket-nodejs14](custom-container-function/fc-custom-container-websocket-nodejs14/src):`s init start-fc-custom-container-websocket-nodejs14`
       - [fc-custom-container-websocket-python3.9](custom-container-function/fc-custom-container-websocket-python3.9/src):`s init start-fc-custom-container-websocket-python3.9`
+  - No Web Server Function
+     -  [fc-custom-container-no-web-server-event-env](custom-container-function/fc-custom-container-no-web-server-event-env)
+     -  [fc-custom-container-no-web-server-event-fibonacci](custom-container-function/fc-custom-container-no-web-server-event-fibonacci)
 - Task
   - [Python3](async-task/python3/src):`s init start-async-task-python3`
   
 ---
 
 > - Serverless Devs Repo：https://www.github.com/serverless-devs/serverless-devs
-> - Serverless Devs Docs：https://www.github.com/serverless-devs/docs
+> - Serverless Devs Docs：https://docs.serverless-devs.com
 > - Serverless Devs Dingtalk Group：33947367

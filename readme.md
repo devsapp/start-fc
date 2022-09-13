@@ -78,11 +78,14 @@
       - [fc-custom-container-websocket-python3.9](custom-container-function/fc-custom-container-websocket-python3.9/src):`s init start-fc-custom-container-websocket-python3.9`
   - Grpc案例
       - [fc-custom-container-grpc-golang](custom-container-function/fc-custom-container-grpc-golang/src):`s init start-grpc-custom-container-grpc-golang`
+  - 无Web Server函数
+     -  [fc-custom-container-no-web-server-event-env](custom-container-function/fc-custom-container-no-web-server-event-env)
+     -  [fc-custom-container-no-web-server-event-fibonacci](custom-container-function/fc-custom-container-no-web-server-event-fibonacci)
 - 任务
   - [Python3](async-task/python3/src):`s init start-async-task-python3`
 
 ---
 
 > - Serverless Devs 项目：https://www.github.com/serverless-devs/serverless-devs
-> - Serverless Devs 文档：https://www.github.com/serverless-devs/docs
+> - Serverless Devs 文档：https://docs.serverless-devs.com
 > - Serverless Devs 钉钉交流群：33947367
