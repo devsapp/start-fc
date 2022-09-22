@@ -41,6 +41,7 @@ With this application, you can easily and quickly create an FC case to Alibaba C
   - Nodejs10 
     - Event Function [fc-custom-nodejs10-event](custom-function/nodejs10/fc-custom-nodejs10-event/src):`s init fc-custom-nodejs10-event`
     - Websocket [fc-custom-nodejs10-websocket](custom-function/nodejs10/fc-custom-nodejs10-websocket/src):`s init fc-custom-nodejs10-websocket`
+    -  Grpc  [fc-custom-golang-grpc](custom-function/golang/fc-custom-golang-grpc/src):`s init fc-custom-golang-grpc`
   - Nodejs12 
     - Event Function [fc-custom-nodejs12-event](custom-function/nodejs12/fc-custom-nodejs12-event/src):`s init fc-custom-nodejs12-event`
     - Websocket [fc-custom-nodejs12-websocket](custom-function/nodejs12/fc-custom-nodejs12-websocket/src):`s init fc-custom-nodejs12-websocket`
