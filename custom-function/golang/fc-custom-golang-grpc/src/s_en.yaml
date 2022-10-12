@@ -71,17 +71,17 @@ services:
             methods:
               - GET
               - POST
-      customDomains:
-        - domainName: test.grpcHelloWorld
-          protocol: HTTP,HTTPS
-          routeConfigs:
-            - path: /*
-              serviceName: "{{ serviceName }}"
-              functionName: "{{ functionName }}"
-          certConfig:
-            certName: huasan1
-            certificate: ./certificate
-            privateKey: ./privatekey
+#      customDomains:
+#        - domainName: test.grpcHelloWorld
+#          protocol: HTTP,HTTPS
+#          routeConfigs:
+#            - path: /*
+#              serviceName: "{{ serviceName }}"
+#              functionName: "{{ functionName }}"
+#          certConfig:
+#            certName: {your certname}
+#            certificate: ./certificate
+#            privateKey: ./privatekey
   #  next-function: # The case of the second function, just for reference
   #    # If you execute s deploy under the current project, the modules will be deployed at the same time:
   #    #   helloworld: service hello-world-service, function cpp-event-function

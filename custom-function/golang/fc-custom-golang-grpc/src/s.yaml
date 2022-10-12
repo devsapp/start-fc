@@ -49,9 +49,6 @@ services:
     props:
       region: ${vars.region}
       service: ${vars.service}
-#        logConfig:
-#          project: congxiao-dev
-#          logstore: function-log
       function:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
@@ -69,17 +66,17 @@ services:
             methods:
               - GET
               - POST
-      customDomains:
-        - domainName: auto
-          protocol: HTTP,HTTPS
-          routeConfigs:
-            - path: /*
-              serviceName: "{{ serviceName }}"
-              functionName: "{{ functionName }}"
-          certConfig:
-            certName: huasan1
-            certificate: ./certificate
-            privateKey: ./privatekey
+#      customDomains:
+#        - domainName: auto
+#          protocol: HTTP,HTTPS
+#          routeConfigs:
+#            - path: /*
+#              serviceName: "{{ serviceName }}"
+#              functionName: "{{ functionName }}"
+#          certConfig:
+#            certName: {your certname}
+#            certificate: ./certificate
+#            privateKey: ./privatekey
 #  next-function: # 第二个函数的案例，仅供参考
 #    # 如果在当前项目下执行 s deploy，会同时部署模块：
 #    #   helloworld：服务hello-world-service，函数cpp-event-function
