@@ -50,7 +50,8 @@ services:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
         caPort: 9000
-        memorySize: 256
+        memorySize: 1024
+        instanceConcurrency: 16
         timeout: 60
         runtime: custom-container
         customContainerConfig:
