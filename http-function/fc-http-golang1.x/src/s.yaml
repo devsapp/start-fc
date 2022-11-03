@@ -37,7 +37,7 @@ services:
       pre-deploy: # 在deploy之前运行
         - run: GO111MODULE=on go get github.com/aliyun/fc-runtime-go-sdk
           path: ./code
-        - run: GO111MODULE=on GOOS=linux CGO_ENABLED=0 go build -o target/main main.go
+        - run: GO111MODULE=on GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
           path: ./code
 #        - component: fc build --use-docker --dockerfile ./code/Dockerfile  # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
 #        - run: docker build xxx          # 要执行的系统命令，类似于一种钩子的形式
