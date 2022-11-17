@@ -54,7 +54,7 @@
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
     - 获取项目并且填入相关信息：`s init fc-custom-python-grpc -d fc-custom-python-grpc`,自定义域名需要绑定账号对应region的fc endpoint
-    - 进入项目`cd fc-custom-python-grpc`，将您的server端证书，server端私钥，ca根证书复制到当前目录，修改s.yaml中的 `certificate: .\xxxxxx.pem  privateKey: .\xxxxxxkey.pem`
+    - 进入项目`cd fc-custom-python-grpc`，将您的server端证书，server端私钥，ca根证书复制到当前目录，修改s.yaml中的server端证书`certificate: .\xxxxxx.pem`server端私钥`privateKey: .\xxxxxxkey.pem`
     - 进行项目部署：`cd  fc-custom-python-grpc && s build --use-docker `安装函数运行所需要的依赖，完成之后`s deploy`直接部署到fc
     - `cd code`进入代码目录，修改client端代码填入ca根证书的路径`ca_cert = open("../xxxxxxxx-root.cer", 'rb').read()`
     - 调用client端，向server端发起请求并且获得相应结果：`python greeter_client.py -addr {你的自定义域名}`
