@@ -53,17 +53,43 @@
     - 初始化项目：`s init fc-custom-golang-event -d fc-custom-golang-event`   
     - 进入项目，并进行项目部署：`cd fc-custom-golang-event && s deploy -y`
 
+> 注意: s deploy 之前的 actions 中 pre-deploy 中完成了编译， 如果编译过程中 go mod 下载很慢，可以考虑使用国内 go proxy 代理 [https://goproxy.cn/](https://goproxy.cn/)
+
 </deploy>
 
 <appdetail id="flushContent">
 
 # 应用详情
 
-
-
 本应用仅作为学习和参考使用，您可以基于本项目进行二次开发和完善，实现自己的业务逻辑
 
+## 如何本地调试
+直接根据您的平台完成编译， 然后将目标二进制运行起来， 其实本质是启动了一个 http server，然后对这个  http server 发动 http 请求即可
 
+**build**
+
+```bash
+$ cd code
+
+# linux
+$ GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
+
+# mac
+$ GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
+
+# windows
+$ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
+```
+
+**debug**
+
+``` bash
+# 打开一个终端， 运行 target/main
+# 然后打开另外一个终端，curl 发 http 请求
+$ curl 127.0.0.1:9000/invoke -d "my event" -H "x-fc-request-id:rid123456"
+```
+
+![](https://img.alicdn.com/imgextra/i4/O1CN019fgqet1haF7QDSTT3_!!6000000004293-2-tps-2338-358.png)
 
 </appdetail>
 
