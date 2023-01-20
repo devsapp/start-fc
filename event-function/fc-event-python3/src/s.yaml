@@ -49,7 +49,7 @@ services:
       function:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
-        runtime: python3
+        runtime: "{{ runtime }}"
         codeUri: ./code
         handler: index.handler
         memorySize: 128
