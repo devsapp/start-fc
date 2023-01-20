@@ -1,2 +1,1 @@
-custom-function/golang/fc-custom-golang-event
-custom-function/golang/fc-custom-golang-http
+event-function/fc-event-python3

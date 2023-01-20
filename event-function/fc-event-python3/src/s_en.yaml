@@ -47,9 +47,9 @@ services:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
       service: ${vars.service}
       function:
-        name: custom-cpp-event-function
+        name: python3.9-event-function
         description: 'hello world by serverless devs'
-        runtime: python3
+        runtime: python3.9
         codeUri: ./code
         handler: index.handler
         memorySize: 128

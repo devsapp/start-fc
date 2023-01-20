@@ -14,7 +14,7 @@
 
 <description>
 
-快速部署一个 Python 3.6 的 Event 类型的 Hello World 函数到阿里云函数计算。
+快速部署一个 Python 3 的 Event 类型的 Hello World 函数到阿里云函数计算。
 
 </description>
 
@@ -33,7 +33,7 @@
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/event-function/fc-event-python3.6)
+- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/event-function/fc-event-python3)
 
 </codepre>
 
