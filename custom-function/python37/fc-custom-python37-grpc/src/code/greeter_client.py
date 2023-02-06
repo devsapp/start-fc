@@ -82,9 +82,7 @@ def run():
     # NOTE(gRPC Python Team): .close() is possible on a channel and should be
     # used in circumstances in which the with statement does not fit the needs
     # of the code.
-    ca_cert = open("../Digicert-OV-DV-root.cer", 'rb').read()
-    credentials = grpc.ssl_channel_credentials(ca_cert)
-    with grpc.secure_channel(args.addr + ':8089', credentials) as channel:
+    with grpc.secure_channel(args.addr + ':8089', grpc.ssl_channel_credentials()) as channel:
         stub = helloworld_pb2_grpc.GreeterStub(channel)
         print("-------------- Greeting Say Hello----------------")
         greeting_hello(stub)

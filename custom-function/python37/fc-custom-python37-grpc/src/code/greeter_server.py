@@ -90,10 +90,12 @@ class Greeter(helloworld_pb2_grpc.GreeterServicer):
 
 
 def serve():
+    port = '8089'
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     helloworld_pb2_grpc.add_GreeterServicer_to_server(Greeter(), server)
-    server.add_insecure_port('[::]:8089')
+    server.add_insecure_port('[::]:'+port)
     server.start()
+    print("Server started, listening on " + port)
     server.wait_for_termination()
 
 
