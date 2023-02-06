@@ -12,12 +12,13 @@ func initialize(ctx *gr.FCContext) error {
 }
 
 func handler(ctx *gr.FCContext, event []byte) ([]byte, error) {
-	fcLogger := gr.GetLogger().WithField("requestId", ctx.RequestID)
+	fcLogger := ctx.GetLogger()
 	_, err := json.Marshal(ctx)
 	if err != nil {
 		fcLogger.Error("error:", err)
 	}
 	fcLogger.Infof("hello golang!")
+	fcLogger.Infof("hello golang2!")
 	return event, nil
 }
 

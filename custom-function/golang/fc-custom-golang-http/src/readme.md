@@ -1,20 +1,20 @@
-# fc-custom-golang-event 帮助文档
+# fc-custom-golang-http 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-http&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=fc-custom-golang-event" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=fc-custom-golang-http" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-http&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=fc-custom-golang-event" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-event&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=fc-custom-golang-http" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=fc-custom-golang-http&type=packageDownload">
   </a>
 </p>
 
 <description>
 
-快速部署一个基于custom runtime 的 Golang Event 类型的 Hello World 到阿里云函数计算
+快速部署一个基于custom runtime 的 Golang Http 类型的 Hello World 到阿里云函数计算
 
 </description>
 
@@ -33,7 +33,7 @@
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/custom-function/golang/fc-custom-golang-event)
+- [ :smiley_cat:  源代码](https://github.com/devsapp/start-fc/blob/main/custom-function/golang/fc-custom-golang-http)
 
 </codepre>
 
@@ -43,15 +43,15 @@
 
 <appcenter>
 
--  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-event) ，
-[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-event)  该应用。 
+-  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-http) ，
+[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=fc-custom-golang-http)  该应用。 
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 初始化项目：`s init fc-custom-golang-event -d fc-custom-golang-event`   
-    - 进入项目，并进行项目部署：`cd fc-custom-golang-event && s deploy -y`
+    - 初始化项目：`s init fc-custom-golang-http -d fc-custom-golang-http`   
+    - 进入项目，并进行项目部署：`cd fc-custom-golang-http && s deploy -y`
 
 > 注意: s deploy 之前的 actions 中 pre-deploy 中完成了编译， 如果编译过程中 go mod 下载很慢，可以考虑使用国内 go proxy 代理 [https://goproxy.cn/](https://goproxy.cn/)
 
@@ -86,10 +86,10 @@ $ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
 ``` bash
 # 打开一个终端， 运行 target/main
 # 然后打开另外一个终端，curl 发 http 请求
-$ curl 127.0.0.1:9000/invoke -d "my event" -H "x-fc-request-id:rid123456"
-```
+$ curl 127.0.0.1:9000/a -H "x-fc-request-id:rid123456"
 
-![](https://img.alicdn.com/imgextra/i4/O1CN019fgqet1haF7QDSTT3_!!6000000004293-2-tps-2338-358.png)
+$ curl 127.0.0.1:9000/b -d "my event" -H "x-fc-request-id:rid123456"
+```
 
 </appdetail>
 

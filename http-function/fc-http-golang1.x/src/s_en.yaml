@@ -37,7 +37,7 @@ services:
       pre-deploy:    # run before deploy
         - run: GO111MODULE=on go get github.com/aliyun/fc-runtime-go-sdk
           path: ./code
-        - run: GO111MODULE=on GOOS=linux CGO_ENABLED=0 go build -o target/main main.go
+        - run: GO111MODULE=on GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
           path: ./code
 #        - component: fc build --use-docker --dockerfile ./code/Dockerfile # The component to run, the format is [component: component name command parameter] (you can get the component list through s cli registry search --type Component)
 #        - run: docker build xxx                  # System command to execute, similar to a hook

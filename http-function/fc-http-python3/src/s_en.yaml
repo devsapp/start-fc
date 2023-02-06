@@ -33,12 +33,8 @@ services:
     # Build only helloworld: s helloworld build
     # If s build is directly executed without helloworld, the tool will perform the same operation on all business modules at the same level as helloworld under the current Yaml (if there are other level modules, such as the next-function commented below), according to certain Sequential build operations
     component: fc    # The name of the component. The Serverless Devs tool itself is similar to a game console and does not have specific business capabilities. The component is similar to a game card. Users can achieve different functions by inserting different game cards into the game console, that is, by using Different components implement different specific business capabilities
-    actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
-      pre-deploy:    # run before deploy
-        - run: GO111MODULE=on go get github.com/aliyun/fc-runtime-go-sdk
-          path: ./code
-        - run: GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
-          path: ./code
+#    actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
+#      pre-deploy:    # run before deploy
 #        - component: fc build --use-docker --dockerfile ./code/Dockerfile # The component to run, the format is [component: component name command parameter] (you can get the component list through s cli registry search --type Component)
 #        - run: docker build xxx                  # System command to execute, similar to a hook
 #          path: ./src                            # The path to execute system commands/hooks
@@ -51,13 +47,28 @@ services:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
       service: ${vars.service}
       function:
-        name: custom-cpp-event-function
+        name: python-http-function
         description: 'hello world by serverless devs'
-        runtime: go1
-        codeUri: ./code/target
-        handler: main
+        runtime: python3.9
+        codeUri: ./code
+        handler: index.handler
         memorySize: 128
         timeout: 60
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+              methods:
+                - GET
+                - POST
 #  next-function: # The case of the second function, just for reference
 #    # If you execute s deploy under the current project, the modules will be deployed at the same time:
 #    #   helloworld: service hello-world-service, function cpp-event-function
