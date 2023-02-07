@@ -34,8 +34,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
+	pb "fc-custom-golang-grpc/proto"
 	"google.golang.org/grpc"
-	pb "tmp/proto"
 )
 
 var (
