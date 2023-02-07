@@ -1,1 +1,2 @@
-custom-container-function/fc-custom-container-http-springboot
+event-function/fc-event-python3
+http-function/fc-http-python3
