@@ -1,2 +1,4 @@
 event-function/fc-event-python3
 http-function/fc-http-python3
+custom-function/golang/fc-custom-golang-grpc
+custom-function/golang/fc-custom-golang-websocket
