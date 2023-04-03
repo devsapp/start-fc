@@ -15,10 +15,9 @@ import com.aliyun.fc.runtime.FunctionInitializer;
 public class App implements StreamRequestHandler, FunctionInitializer {
 
     public void initialize(Context context) throws IOException {
-        //TODO
+        // TODO
     }
 
-    @Override
     public void handleRequest(
             InputStream inputStream, OutputStream outputStream, Context context) throws IOException {
         outputStream.write(new String("hello world\n").getBytes());
