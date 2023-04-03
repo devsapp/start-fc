@@ -17,16 +17,15 @@ import com.aliyun.fc.runtime.HttpRequestHandler;
 public class App implements HttpRequestHandler, FunctionInitializer {
 
     public void initialize(Context context) throws IOException {
-        //TODO
+        // TODO
     }
 
-    @Override
     public void handleRequest(HttpServletRequest request, HttpServletResponse response, Context context)
             throws IOException, ServletException {
         String requestPath = (String) request.getAttribute("FC_REQUEST_PATH");
         String requestURI = (String) request.getAttribute("FC_REQUEST_URI");
-        String requestClientIP = (String) request.getAttribute("FC_REQUEST_CLIENT_IP"); 
-        
+        String requestClientIP = (String) request.getAttribute("FC_REQUEST_CLIENT_IP");
+
         response.setStatus(200);
         response.setHeader("header1", "value1");
         response.setHeader("header2", "value2");
