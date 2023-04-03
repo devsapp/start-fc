@@ -1,2 +1,2 @@
-custom-function/golang/fc-custom-golang-grpc
-custom-function/golang/fc-custom-golang-websocket
+event-function/fc-event-java11
+http-function/fc-http-java11
