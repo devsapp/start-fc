@@ -21,6 +21,7 @@ namespace fc_project
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://0.0.0.0:9000");
                 });
     }
 }
