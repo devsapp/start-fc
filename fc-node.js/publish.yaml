@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-nodejs
-Version: dev.0.4
+Version: dev.0.1
 Provider:
   - 阿里云
 Description: 快速部署一个 Node.JS 的 Hello World 函数到阿里云函数计算。
@@ -16,6 +16,8 @@ Service:
   函数计算:
     Authorities:
       - AliyunFCFullAccess
+Organization: 阿里云函数计算（FC）
+Effective: Public
 Parameters:
   type: object
   additionalProperties: false # 不允许增加其他属性
@@ -43,7 +45,9 @@ Parameters:
         - ap-southeast-2
         - ap-southeast-3
         - ap-southeast-5
+        - ap-southeast-7
         - ap-northeast-1
+        - ap-northeast-2
         - eu-central-1
         - eu-west-1
         - us-west-1

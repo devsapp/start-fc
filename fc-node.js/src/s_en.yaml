@@ -65,14 +65,14 @@ resources:
       #         methods:
       #           - GET
       #           - POST
-  next_function: # 第二个函数的案例，仅供参考
-    # If you execute s deploy under the current project, the modules will be deployed at the same time
-    # If you want to deploy the current service and function separately, you can execute s + module name/business name + deploy, for example: s next_function deploy
-    # If you want to deploy the current function separately, you can execute s + module name/business name + deploy function, for example: s next_function deploy function
-    # For more commands, please refer to: https://www.serverless-devs.com/fc/readme#Document related
-    component: fc3@dev
-    props:
-      region: ${vars.region}
-      function: # 定义一个新的函数
-        functionName: next_function_example
-        description: 'hello world by serverless devs'
+  # next_function: # 第二个函数的案例，仅供参考
+  #   # If you execute s deploy under the current project, the modules will be deployed at the same time
+  #   # If you want to deploy the current service and function separately, you can execute s + module name/business name + deploy, for example: s next_function deploy
+  #   # If you want to deploy the current function separately, you can execute s + module name/business name + deploy function, for example: s next_function deploy function
+  #   # For more commands, please refer to: https://www.serverless-devs.com/fc/readme#Document related
+  #   component: fc3@dev
+  #   props:
+  #     region: ${vars.region}
+  #     function: # 定义一个新的函数
+  #       functionName: next_function_example
+  #       description: 'hello world by serverless devs'
