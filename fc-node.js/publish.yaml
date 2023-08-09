@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-nodejs
-Version: dev.0.1
+Version: dev.0.2
 Provider:
   - 阿里云
 Description: 快速部署一个 Node.JS 的 Hello World 函数到阿里云函数计算。
@@ -27,7 +27,7 @@ Parameters:
     region:
       title: 地域
       type: string
-      default: cn-hangzhou
+      default: cn-huhehaote
       description: 创建应用所在的地区
       enum:
         - cn-beijing
@@ -58,7 +58,7 @@ Parameters:
     runtime:
       title: nodejs 运行时
       type: string
-      default: nodejs16
+      default: nodejs14
       description: 创建应用所在的地区
       enum:
         - nodejs8
