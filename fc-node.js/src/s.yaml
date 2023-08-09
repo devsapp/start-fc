@@ -28,7 +28,7 @@ resources:
   helloworld: # 业务名称/模块名称
     # 如果只想针对 helloworld 下面的业务进行相关操作，可以在命令行中加上 helloworld，例如：
     # 只对helloworld进行构建：s helloworld build
-    # 如果不带有 helloworld ，而是直接执行 s build，工具则会对当前Yaml下，所有和 helloworld 平级的业务模块（如有其他平级的模块，例如下面注释的next-function），按照一定顺序进行 build 操作
+    # 如果不带有 helloworld ，而是直接执行 s build，工具则会对当前Yaml下，所有和 helloworld 平级的业务模块（如有其他平级的模块，例如下面注释的next_function），按照一定顺序进行 build 操作
     component: fc3@dev # 组件名称，Serverless Devs 工具本身类似于一种游戏机，不具备具体的业务能力，组件类似于游戏卡，用户通过向游戏机中插入不同的游戏卡实现不同的功能，即通过使用不同的组件实现不同的具体业务能力
     # actions:       # 自定义执行逻辑，关于actions 的使用，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#行为描述
     #   pre-deploy: # 在deploy之前运行
@@ -66,7 +66,7 @@ resources:
       #           - GET
       #           - POST
   # next_function: # 第二个函数的案例，仅供参考
-  #  # 如果在当前项目下执行 s deploy，会同时部署模块：
+  #  # 如果在当前项目下执行 s deploy，会同时部署模块
   #  # 如果想单独部署当前服务与函数，可以执行 s + 模块名/业务名 + deploy，例如：s next_function deploy
   #  # 如果想单独部署当前函数，可以执行 s + 模块名/业务名 + deploy function，例如：s next_function deploy function
   #  # 更多命令可参考：https://www.serverless-devs.com/fc/readme#文档相关
@@ -74,5 +74,5 @@ resources:
   #   props:
   #     region: ${vars.region}
   #     function: # 定义一个新的函数
-  #       functionName: next-function-example
+  #       functionName: next_function_example
   #       description: 'hello world by serverless devs'
