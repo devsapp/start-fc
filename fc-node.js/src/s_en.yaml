@@ -24,7 +24,7 @@ access: "{{ access }}"
 vars: # global variables
   region: cn-hangzhou
 
-services:
+resources:
   helloworld: # business name/module name
     # If you only want to perform related operations on the business below helloworld, you can add helloworld to the command line, for example:
     # Build only helloworld: s helloworld build
