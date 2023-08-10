@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import logging
 
 def handler(event, context):
   logger = logging.getLogger()
-  logger.info('hello world')
-  return 'hello world'
+  logger.info(event)
+  return event
