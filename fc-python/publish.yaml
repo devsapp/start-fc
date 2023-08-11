@@ -16,6 +16,10 @@ Service:
   函数计算:
     Authorities:
       - AliyunFCFullAccess
+
+Organization: 阿里云函数计算（FC）
+Effective: Public
+
 Parameters:
   type: object
   additionalProperties: false # 不允许增加其他属性
