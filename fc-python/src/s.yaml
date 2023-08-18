@@ -37,7 +37,7 @@ resources:
         code: ./code
         handler: index.handler
         memorySize: 128
-        timeout: 60
+        timeout: 3
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
