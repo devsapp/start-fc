@@ -1,28 +1,28 @@
 > 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
 
-# start-fc3-java 帮助文档
+# start-fc3-golang 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-java&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-golang&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc3-java" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-java&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc3-golang" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-golang&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc3-java" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-java&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc3-golang" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-golang&type=packageDownload">
   </a>
 </p>
 
 <description>
 
-快速部署一个 Java 的 Hello World 函数到阿里云函数计算。
+快速部署一个 Golang 的 Hello World 函数到阿里云函数计算。
 
 </description>
 
 <codeUrl>
 
-- [:smiley_cat: 代码](https://code.alibaba-inc.com/serverless-devs/start-fc/tree/master/fc-java)
+- [:smiley_cat: 代码](https://code.alibaba-inc.com/serverless-devs/start-fc/tree/master/fc-golang)
 
 </codeUrl>
 <preview>
@@ -62,16 +62,16 @@
 
 <appcenter>
    
-- :fire: 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-java) ，
-  [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-java) 该应用。
+- :fire: 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-golang) ，
+  [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-golang) 该应用。
    
 </appcenter>
 <deploy>
     
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://docs.serverless-devs.com/fc/config) ；
-  - 初始化项目：`s init start-fc3-java -d start-fc3-java`
-  - 进入项目，并进行项目部署：`cd start-fc3-java && s deploy -y`
+  - 初始化项目：`s init start-fc3-golang -d start-fc3-golang`
+  - 进入项目，并进行项目部署：`cd start-fc3-golang && s deploy -y`
    
 </deploy>
 

@@ -62,7 +62,7 @@ resources:
   #       functionName: next_function_example
   #       description: 'hello world by serverless devs'
   #       runtime: "{{ runtime }}"
-  #       codeUri: ./code
+  #       code: ./code
   #       handler: index.handler
   #       memorySize: 128
   #       timeout: 60
