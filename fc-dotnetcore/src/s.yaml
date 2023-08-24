@@ -29,18 +29,16 @@ resources:
     component: fc3@dev # 组件名称，Serverless Devs 工具本身类似于一种游戏机，不具备具体的业务能力，组件类似于游戏卡，用户通过向游戏机中插入不同的游戏卡实现不同的功能，即通过使用不同的组件实现不同的具体业务能力
     actions:       # 自定义执行逻辑，关于actions 的使用，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E8%A1%8C%E4%B8%BA%E6%8F%8F%E8%BF%B0actions
       pre-deploy: # 在deploy之前运行
-        - run: GO111MODULE=on go mod tidy
-          path: ./code
-        - run: GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go
-          path: ./code
+        - run: dotnet publish -c Release -o ./target
+          path: ./HelloWorldApp
     props:
       region: ${vars.region}              # 关于变量的使用方法，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E5%8F%98%E9%87%8F%E8%B5%8B%E5%80%BC
       function:
         functionName: "{{ functionName }}"
         description: 'hello world by serverless devs'
         runtime: "{{ runtime }}"
-        code: ./code/target
-        handler: main
+        code: ./HelloWorldApp/target/
+        handler: HelloWorldApp::Example.Hello::StreamHandler
         memorySize: 128
         timeout: 5
       # triggers:
