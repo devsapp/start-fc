@@ -61,7 +61,7 @@ Parameters:
       description: 只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-128 之间。
     runtime:
       title: golang 运行时
-      type: string9
+      type: string
       default: go1
       description: 创建应用所在的地区
       enum:
