@@ -27,10 +27,7 @@ resources:
     # Build only hello_world: s hello_world build
     # If s build is directly executed without hello_world, the tool will perform the same operation on all business modules at the same level as hello_world under the current Yaml (if there are other level modules, such as the next_function commented below), according to certain Sequential build operations
     component: fc3@dev    # The name of the component. The Serverless Devs tool itself is similar to a game console and does not have specific business capabilities. The component is similar to a game card. Users can achieve different functions by inserting different game cards into the game console, that is, by using Different components implement different specific business capabilities
-    actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
-      pre-deploy: # run before deploy
-        - run: npm install
-          path: ./code
+    # actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
       function:
@@ -44,13 +41,16 @@ resources:
         code: ./code
         customRuntimeConfig:
           command:
-            - node
-            - server.js
-          port: 9000
-        environmentVariables: 
-          PATH: /opt/nodejs16/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
-        layers: 
-          - acs:fc:${vars.region}:official:layers/Nodejs16/versions/1x
+            - gunicorn
+          args:
+            - "-c"
+            - "gunicorn_conf.py"
+            - "server:app"
+        environmentVariables:
+          PYTHONPATH: /code/3rd-packages
+          PATH: /code/3rd-packages/bin:/opt/python3.8/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+        layers:
+          - acs:fc:${vars.region}:official:layers/Python38/versions/2	
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 
