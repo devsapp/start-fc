@@ -29,7 +29,7 @@ resources:
     component: fc3@dev    # The name of the component. The Serverless Devs tool itself is similar to a game console and does not have specific business capabilities. The component is similar to a game card. Users can achieve different functions by inserting different game cards into the game console, that is, by using Different components implement different specific business capabilities
     actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
       pre-deploy: # run before deploy
-        - run: wget http://mirrors.nju.edu.cn/nodejs/v12.16.1/node-v12.16.1-linux-x64.tar.gz -O node-v12.16.1-linux-x64.tar.gz && tar -zxvf node-v12.16.1-linux-x64.tar.gz && rm -rf node-v12.16.1-linux-x64.tar.gz
+        - run: wget http://mirrors.nju.edu.cn/nodejs/v16.20.1/node-v16.20.1-linux-x64.tar.gz -O node-v16.20.1-linux-x64.tar.gz && tar -zxvf node-v16.20.1-linux-x64.tar.gz && rm -rf node-v16.20.1-linux-x64.tar.gz
           path: ./code
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
@@ -44,7 +44,7 @@ resources:
         code: ./code
         customRuntimeConfig:
           command:
-            - /code/node-v12.16.1-linux-x64/bin/node
+            - /code/node-v16.20.1-linux-x64/bin/node
             - server.js
           port: 9000
       # triggers:
