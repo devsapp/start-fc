@@ -29,7 +29,7 @@ resources:
     component: fc3@dev # 组件名称，Serverless Devs 工具本身类似于一种游戏机，不具备具体的业务能力，组件类似于游戏卡，用户通过向游戏机中插入不同的游戏卡实现不同的功能，即通过使用不同的组件实现不同的具体业务能力
     actions:       # 自定义执行逻辑，关于actions 的使用，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E8%A1%8C%E4%B8%BA%E6%8F%8F%E8%BF%B0actions
       pre-deploy: # 在deploy之前运行
-        - run: wget http://mirrors.nju.edu.cn/nodejs/v12.16.1/node-v12.16.1-linux-x64.tar.gz -O node-v12.16.1-linux-x64.tar.gz && tar -zxvf node-v12.16.1-linux-x64.tar.gz && rm -rf node-v12.16.1-linux-x64.tar.gz
+        - run: wget http://mirrors.nju.edu.cn/nodejs/v16.20.1/node-v16.20.1-linux-x64.tar.gz -O node-v16.20.1-linux-x64.tar.gz && tar -zxvf node-v16.20.1-linux-x64.tar.gz && rm -rf node-v16.20.1-linux-x64.tar.gz
           path: ./code
         # - component: fc build --use-docker # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
     props:
@@ -45,7 +45,7 @@ resources:
         code: ./code
         customRuntimeConfig:
           command:
-            - /code/node-v12.16.1-linux-x64/bin/node
+            - /code/node-v16.20.1-linux-x64/bin/node
             - server.js
           port: 9000
       # triggers:
