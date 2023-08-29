@@ -62,7 +62,7 @@ Parameters:
     runtime:
       title: php 运行时
       type: string
-      default: php
+      default: php7.2
       description: 创建应用所在的地区
       enum:
         - php7.2
