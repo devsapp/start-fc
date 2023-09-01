@@ -62,7 +62,7 @@ Parameters:
     runtime:
       title: dotnetcore 运行时
       type: string
-      default: go1
+      default: dotnetcore3.1
       description: 创建应用所在的地区
       enum:
         - dotnetcore3.1
