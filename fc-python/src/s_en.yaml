@@ -27,7 +27,9 @@ resources:
     # Build only hello_world: s hello_world build
     # If s build is directly executed without hello_world, the tool will perform the same operation on all business modules at the same level as hello_world under the current Yaml (if there are other level modules, such as the next_function commented below), according to certain Sequential build operations
     component: fc3@dev    # The name of the component. The Serverless Devs tool itself is similar to a game console and does not have specific business capabilities. The component is similar to a game card. Users can achieve different functions by inserting different game cards into the game console, that is, by using Different components implement different specific business capabilities
-    # actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
+    actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
+      pre-deploy: # run before deploy
+        component: fc3@dev build --use-docker
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
       function:
