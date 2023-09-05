@@ -34,7 +34,8 @@ public class helloController {
     @PostMapping("/invoke")
     public String fcEventInvoke(@RequestHeader Map<String, String> headers, @RequestBody String event) {
         String fcRequestID = headers.get("x-fc-request-id");
-        System.out.println("hello world!" + event.toString());
+        System.out.println("hello world!");
+        System.out.println(event);
         System.out.println("Invoke finished, request ID: " + fcRequestID);
         return "hello world!";
     }

@@ -2,7 +2,8 @@
 
 import logging
 
+
 def handler(event, context):
-  logger = logging.getLogger()
-  logger.info(event)
-  return event
+    logger = logging.getLogger()
+    logger.info(event)
+    return event
