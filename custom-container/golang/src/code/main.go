@@ -1,27 +1,34 @@
 package main
 
 import (
-	"encoding/json"
+	"io/ioutil"
 
-	gr "github.com/awesome-fc/golang-runtime"
+	"github.com/gin-gonic/gin"
 )
 
-func initialize(ctx *gr.FCContext) error {
-	ctx.GetLogger().Infoln("init golang!")
-	return nil
-}
-
-func handler(ctx *gr.FCContext, event []byte) ([]byte, error) {
-	fcLogger := ctx.GetLogger()
-	_, err := json.Marshal(ctx)
-	if err != nil {
-		fcLogger.Error("error:", err)
-	}
-	fcLogger.Infof("hello golang!")
-	fcLogger.Infof("hello golang2!")
-	return event, nil
-}
-
 func main() {
-	gr.Start(handler, initialize)
+	r := gin.Default()
+	r.POST("/invoke", func(c *gin.Context) {
+		bodyBytes, err := ioutil.ReadAll(c.Request.Body)
+		if err != nil {
+			panic(err)
+		}
+		c.JSON(200, gin.H{
+			"message": "hello " + string(bodyBytes),
+		})
+	})
+
+	r.POST("/initialize", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "initialize ok",
+		})
+	})
+
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "hello world",
+		})
+	})
+	// listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	r.Run()
 }

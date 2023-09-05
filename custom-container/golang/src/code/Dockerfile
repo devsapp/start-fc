@@ -1,14 +1,13 @@
-FROM golang:1.17.11-stretch
-RUN mkdir -p $GOPATH/src/golang.org/x/
-RUN cd $GOPATH/src/golang.org/x/ && git clone https://github.com/golang/net.git
-RUN cd $GOPATH/src/golang.org/x/ &&  git clone https://github.com/golang/sys.git
-RUN GO111MODULE=auto go get github.com/awesome-fc/golang-runtime
+FROM golang:1.20-bullseye
 
-WORKDIR /tmp
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src
 COPY . .
 
+RUN go env -w GO111MODULE=on
+RUN go env -w GOPROXY=https://goproxy.cn,direct
+RUN go mod tidy
 RUN go build -o bootstrap main.go
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-RUN cp /tmp/bootstrap  ./bootstrap
+RUN cp bootstrap  /usr/src/app/bootstrap
 ENTRYPOINT ["/usr/src/app/bootstrap"]

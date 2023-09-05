@@ -12,30 +12,31 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
 public class helloController {
-  @RequestMapping("/")
-  public String sayHello() {
-      return "hello world!";
-  }
+    @RequestMapping("/")
+    public String sayHello() {
+        return "hello world!";
+    }
 
-  // FC Initializer: /initialize will be called when the FC functions are initialized by
-  // API calls, Function updates or FC internal system upgrades
-  @PostMapping("/initialize")
-  public String fcEventInitialize(@RequestHeader Map<String,String> headers) {
-      String fcRequestID = headers.get("x-fc-request-id");
-      System.out.println("Initialized, request ID: " + fcRequestID);
-      return "Hello Spring Boot, from FC Event function initializer!\nPowered by FunctionCompute custom-container runtime\n"
-          + "RequestID: " + fcRequestID + "\n";
-  }
+    // FC Initializer: /initialize will be called when the FC functions are
+    // initialized by
+    // API calls, Function updates or FC internal system upgrades
+    @PostMapping("/initialize")
+    public String fcEventInitialize(@RequestHeader Map<String, String> headers) {
+        String fcRequestID = headers.get("x-fc-request-id");
+        System.out.println("Initialized, request ID: " + fcRequestID);
+        return "Hello Spring Boot, from FC Event function initializer!\nPowered by FunctionCompute custom-container runtime\n"
+                + "RequestID: " + fcRequestID + "\n";
+    }
 
-  
-  // FC Event function:
-  // Invoke handler: /invoke will be called when the FC function responds to an event (e.g. API call or OSS PutObject)
-  @PostMapping("/invoke")
-  public String fcEventInvoke(@RequestHeader Map<String,String> headers, @RequestBody String event) {
-      String fcRequestID = headers.get("x-fc-request-id");
-      System.out.println("hello world!");
-      System.out.println("Invoke finished, request ID: " + fcRequestID);
-      return "hello world!";
-  }
-  
+    // FC Event function:
+    // Invoke handler: /invoke will be called when the FC function responds to an
+    // event (e.g. API call or OSS PutObject)
+    @PostMapping("/invoke")
+    public String fcEventInvoke(@RequestHeader Map<String, String> headers, @RequestBody String event) {
+        String fcRequestID = headers.get("x-fc-request-id");
+        System.out.println("hello world!" + event.toString());
+        System.out.println("Invoke finished, request ID: " + fcRequestID);
+        return "hello world!";
+    }
+
 }

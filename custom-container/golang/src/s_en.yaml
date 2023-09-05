@@ -42,7 +42,8 @@ resources:
         diskSize: 512
         code: ./code
         customContainerConfig:
-          image: 'registry.${vars.region}.aliyuncs.com/fc-demo2/fc-demo:flaskV3'
+          image: 'registry.${vars.region}.aliyuncs.com/fc-demo2/fc-demo:golangV2'
+          port: 8080
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 

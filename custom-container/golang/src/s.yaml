@@ -43,6 +43,7 @@ resources:
         code: ./code
         customContainerConfig:
           image: 'registry.${vars.region}.aliyuncs.com/fc-demo2/fc-demo:golangV2'
+          port: 8080
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
