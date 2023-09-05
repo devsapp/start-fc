@@ -48,9 +48,7 @@ resources:
             - "server:app"
         environmentVariables:
           PYTHONPATH: /code/3rd-packages
-          PATH: /code/3rd-packages/bin:/opt/python3.8/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
-        layers:
-          - acs:fc:${vars.region}:official:layers/Python38/versions/2	
+          PATH: /code/3rd-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 

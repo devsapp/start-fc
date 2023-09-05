@@ -50,9 +50,7 @@ resources:
             - "server:app"
         environmentVariables: #环境变量
           PYTHONPATH: /code/3rd-packages
-          PATH: /code/3rd-packages/bin:/opt/python3.8/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
-        layers: #层
-          - acs:fc:${vars.region}:official:layers/Python38/versions/2	
+          PATH: /code/3rd-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
