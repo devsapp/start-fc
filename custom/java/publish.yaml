@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-custom-java
-Version: dev.0.5
+Version: dev.0.6
 Provider:
   - 阿里云
 Description: 快速部署一个 Custom Java 的 Hello World 函数到阿里云函数计算。
@@ -66,4 +66,3 @@ Parameters:
       description: 创建应用所在的地区
       enum:
         - custom
-        - custom.debian10
