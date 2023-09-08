@@ -70,7 +70,7 @@
     
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://docs.serverless-devs.com/fc/config) ；
-  - 初始化项目：`s init start-fc3-custom-java -d start-fc3-custom-java`
+  - 初始化项目：`s init --project start-fc3-custom-java -d start-fc3-custom-java`
   - 进入项目，并进行项目部署：`cd start-fc3-custom-java && s deploy -y`
    
 </deploy>
