@@ -30,14 +30,13 @@ resources:
     # actions:       # 自定义执行逻辑，关于actions 的使用，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E8%A1%8C%E4%B8%BA%E6%8F%8F%E8%BF%B0actions
     props:
       region: ${vars.region}              # 关于变量的使用方法，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E5%8F%98%E9%87%8F%E8%B5%8B%E5%80%BC
-      function:
-        functionName: "{{ functionName }}"
-        description: 'hello world by serverless devs'
-        runtime: "{{ runtime }}"
-        code: ./code
-        handler: index.handler
-        memorySize: 128
-        timeout: 3
+      functionName: "{{ functionName }}"
+      description: 'hello world by serverless devs'
+      runtime: "{{ runtime }}"
+      code: ./code
+      handler: index.handler
+      memorySize: 128
+      timeout: 3
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
@@ -58,11 +57,10 @@ resources:
   #   component: fc3@dev
   #   props:
   #     region: ${vars.region}
-  #     function: # 定义一个新的函数
-  #       functionName: next_function_example
-  #       description: 'hello world by serverless devs'
-  #       runtime: "{{ runtime }}"
-  #       code: ./code
-  #       handler: index.handler
-  #       memorySize: 128
-  #       timeout: 60
+  #     functionName: next_function_example
+  #     description: 'hello world by serverless devs'
+  #     runtime: "{{ runtime }}"
+  #     code: ./code
+  #     handler: index.handler
+  #     memorySize: 128
+  #     timeout: 60

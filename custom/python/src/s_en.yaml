@@ -30,25 +30,24 @@ resources:
     # actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
-      function:
-        functionName: "{{ functionName }}"
-        runtime: "{{ runtime }}"
-        description: 'hello world by serverless devs'
-        timeout: 5
-        memorySize: 512
-        cpu: 0.5
-        diskSize: 512
-        code: ./code
-        customRuntimeConfig:
-          command:
-            - gunicorn
-          args:
-            - "-c"
-            - "gunicorn_conf.py"
-            - "server:app"
-        environmentVariables:
-          PYTHONPATH: /code/3rd-packages
-          PATH: /code/3rd-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+      functionName: "{{ functionName }}"
+      runtime: "{{ runtime }}"
+      description: 'hello world by serverless devs'
+      timeout: 5
+      memorySize: 512
+      cpu: 0.5
+      diskSize: 512
+      code: ./code
+      customRuntimeConfig:
+        command:
+          - gunicorn
+        args:
+          - "-c"
+          - "gunicorn_conf.py"
+          - "server:app"
+      environmentVariables:
+        PYTHONPATH: /code/3rd-packages
+        PATH: /code/3rd-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 
@@ -69,11 +68,10 @@ resources:
   #   component: fc3@dev
   #   props:
   #     region: ${vars.region}
-  #     function: # 定义一个新的函数
-  #       functionName: next_function_example
-  #       description: 'hello world by serverless devs'
-  #       runtime: "{{ runtime }}"
-  #       codeUri: ./code/target
-  #       handler: main
-  #       memorySize: 128
-  #       timeout: 60
+  #     functionName: next_function_example
+  #     description: 'hello world by serverless devs'
+  #     runtime: "{{ runtime }}"
+  #     codeUri: ./code/target
+  #     handler: main
+  #     memorySize: 128
+  #     timeout: 60

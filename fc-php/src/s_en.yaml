@@ -30,14 +30,13 @@ resources:
     # actions:         # Customize execution logic. For the use of actions, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Behavior description
     props:
       region: ${vars.region} # For the usage of variables, please refer to: https://www.serverless-devs.com/serverless-devs/yaml#Variable assignment
-      function:
-        functionName: "{{ functionName }}"
-        description: 'hello world by serverless devs'
-        runtime: "{{ runtime }}"
-        code: ./code
-        handler: index.handler
-        memorySize: 128
-        timeout: 3
+      functionName: "{{ functionName }}"
+      description: 'hello world by serverless devs'
+      runtime: "{{ runtime }}"
+      code: ./code
+      handler: index.handler
+      memorySize: 128
+      timeout: 3
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 
