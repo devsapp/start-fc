@@ -22,7 +22,6 @@
 
 - [start-fc3-custom-java](./custom/java/src)
 
-
 ## Custom Container
 
 - [start-fc3-custom-container-nodejs](./custom-container/nodejs/src)
@@ -32,3 +31,7 @@
 - [start-fc3-custom-container-golang](./custom-container/golang/src)
 
 - [start-fc3-custom-container-java](./custom-container/java/src)
+
+## Custom Domain
+
+- [fc-custom-domain](./fc-custom-domain/src)

@@ -39,7 +39,7 @@ resources:
       code: ./target/HelloFCJava-1.0-SNAPSHOT-jar-with-dependencies.jar
       handler: example.App::handleRequest
       memorySize: 128
-      timeout: 5
+      timeout: 10
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 

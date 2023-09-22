@@ -49,18 +49,17 @@ resources:
       #         - GET
       #         - POST
 
-  # next_function: # 第二个函数的案例，仅供参考
-  #  # 如果在当前项目下执行 s deploy，会同时部署模块
-  #  # 如果想单独部署当前服务与函数，可以执行 s + 模块名/业务名 + deploy，例如：s next_function deploy
-  #  # 如果想单独部署当前函数，可以执行 s + 模块名/业务名 + deploy function，例如：s next_function deploy function
-  #  # 更多命令可参考：https://www.serverless-devs.com/fc/readme#文档相关
-  #   component: fc3@dev
-  #   props:
-  #     region: ${vars.region}
-  #     functionName: next_function_example
-  #     description: 'hello world by serverless devs'
-  #     runtime: "{{ runtime }}"
-  #     code: ./code
-  #     handler: index.handler
-  #     memorySize: 128
-  #     timeout: 60
+  test-fc-domain:
+    component: fc3-domain@dev
+    props: #  组件的属性值
+      region: ${vars.region} 
+      domainName: auto # 使用 auto 自动获取一个临时测试域名, 生产请务必使用自己的域名
+      protocol: HTTP  # HTTP | HTTPS | HTTP,HTTPS
+      routeConfig:
+        routes:
+          - functionName: ${resources.hello_world.props.functionName}
+            methods:
+              - GET
+              - POST
+            path: /a
+            qualifier: LATEST

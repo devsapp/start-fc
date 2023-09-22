@@ -38,7 +38,7 @@ resources:
       functionName: "{{ functionName }}"
       runtime: "{{ runtime }}"
       description: 'hello world by serverless devs'
-      timeout: 5
+      timeout: 10
       memorySize: 512
       cpu: 0.5
       diskSize: 512

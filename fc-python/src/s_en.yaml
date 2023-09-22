@@ -38,7 +38,7 @@ resources:
       code: ./code
       handler: index.handler
       memorySize: 128
-      timeout: 3
+      timeout: 30
       # triggers:
       #   - triggerName: httpTrigger 
       #     triggerType: http 

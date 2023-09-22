@@ -41,7 +41,7 @@ resources:
       code: ./code/target
       handler: main
       memorySize: 128
-      timeout: 5
+      timeout: 10
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
