@@ -26,10 +26,10 @@ resources:
     # 如果只想针对 hello_world 下面的业务进行相关操作，可以在命令行中加上 hello_world，例如：
     # 只对 hello_world 进行构建：s hello_world build
     # 如果不带有 hello_world ，而是直接执行 s build，工具则会对当前Yaml下，所有和 hello_world 平级的业务模块（如有其他平级的模块，例如下面注释的next_function），按照一定顺序进行 build 操作
-    component: fc3@dev # 组件名称，Serverless Devs 工具本身类似于一种游戏机，不具备具体的业务能力，组件类似于游戏卡，用户通过向游戏机中插入不同的游戏卡实现不同的功能，即通过使用不同的组件实现不同的具体业务能力
+    component: fc3 # 组件名称，Serverless Devs 工具本身类似于一种游戏机，不具备具体的业务能力，组件类似于游戏卡，用户通过向游戏机中插入不同的游戏卡实现不同的功能，即通过使用不同的组件实现不同的具体业务能力
     actions:       # 自定义执行逻辑，关于actions 的使用，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E8%A1%8C%E4%B8%BA%E6%8F%8F%E8%BF%B0actions
       pre-deploy: # 在deploy之前运行
-        - component: fc3@dev build --use-docker --dockerfile ./code/Dockerfile  # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
+        - component: fc3 build --use-docker --dockerfile ./code/Dockerfile  # 要运行的组件，格式为【component: 组件名 命令 参数】（可以通过s cli registry search --type Component 获取组件列表）
     props:
       region: ${vars.region}              # 关于变量的使用方法，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E5%8F%98%E9%87%8F%E8%B5%8B%E5%80%BC
       functionName: "{{ functionName }}"
@@ -59,7 +59,7 @@ resources:
   #  # 如果想单独部署当前服务与函数，可以执行 s + 模块名/业务名 + deploy，例如：s next_function deploy
   #  # 如果想单独部署当前函数，可以执行 s + 模块名/业务名 + deploy function，例如：s next_function deploy function
   #  # 更多命令可参考：https://www.serverless-devs.com/fc/readme#文档相关
-  #   component: fc3@dev
+  #   component: fc3
   #   props:
   #     region: ${vars.region}
   #     functionName: next_function_example
