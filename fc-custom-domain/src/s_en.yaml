@@ -50,7 +50,7 @@ resources:
       #         - POST
 
   test-fc-domain:
-    component: fc3-domain@dev
+    component: fc3-domain
     props:
       region: ${vars.region} 
       domainName: auto # Use auto to automatically obtain a temporary test domain name. Please be sure to use your own domain name for production.

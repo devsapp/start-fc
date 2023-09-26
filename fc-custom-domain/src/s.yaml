@@ -50,7 +50,7 @@ resources:
       #         - POST
 
   test-fc-domain:
-    component: fc3-domain@dev
+    component: fc3-domain
     props: #  组件的属性值
       region: ${vars.region} 
       domainName: auto # 使用 auto 自动获取一个临时测试域名, 生产请务必使用自己的域名
