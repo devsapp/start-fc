@@ -6,7 +6,7 @@ async function preInit(inputObj) {
     - FC : https://fc.console.aliyun.com/
     
     Tips：
-    - FC Component: https://www.serverless-devs.com/fc/readme`)
+    - FC Component: https://github.com/devsapp/fc3/blob/master/docs/zh/readme.md`)
 
 }
 

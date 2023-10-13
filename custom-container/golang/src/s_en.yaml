@@ -3,9 +3,9 @@
 # ------------------------------------
 #   Welcome to use Alibaba Cloud Function Compute FC components for project development
 #   Component warehouse address: https://github.com/devsapp/fc
-#   Component help documentation: https://www.serverless-devs.com/fc/readme
-#   Yaml reference documentation: https://www.serverless-devs.com/fc/yaml/readme
-#   About: The relationship between Serverless Devs and FC components, how to declare/deploy multiple functions and other issues, you can refer to the documentation: https://www.serverless-devs.com/fc/tips
+#   Component help documentation: https://github.com/devsapp/fc3/blob/master/docs/zh/readme.md
+#   Yaml reference documentation: https://github.com/devsapp/fc3/blob/master/docs/zh/yaml/readme.md
+#   About: The relationship between Serverless Devs and FC components, how to declare/deploy multiple functions and other issues, you can refer to the documentation: https://github.com/devsapp/fc3/blob/master/docs/zh/tips.md
 #   For questions about how to do CICD, please refer to: https://www.serverless-devs.com/serverless-devs/cicd
 #   For issues such as how to divide the environment, please refer to: https://www.serverless-devs.com/serverless-devs/extend
 #   For more function calculation cases, please refer to: https://github.com/devsapp/awesome/blob/main/README_en.md
@@ -59,7 +59,7 @@ resources:
   #   # If you execute s deploy under the current project, the modules will be deployed at the same time
   #   # If you want to deploy the current service and function separately, you can execute s + module name/business name + deploy, for example: s next_function deploy
   #   # If you want to deploy the current function separately, you can execute s + module name/business name + deploy function, for example: s next_function deploy function
-  #   # For more commands, please refer to: https://www.serverless-devs.com/fc/readme#Document related
+  #   # For more commands, please refer to: https://github.com/devsapp/fc3/blob/master/docs/zh/readme.md#Document related
   #   component: fc3
   #   props:
   #     region: ${vars.region}

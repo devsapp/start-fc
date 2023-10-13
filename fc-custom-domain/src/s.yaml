@@ -3,9 +3,9 @@
 # ------------------------------------
 #   欢迎您使用阿里云函数计算 FC 组件进行项目开发
 #   组件仓库地址：https://github.com/devsapp/fc
-#   组件帮助文档：https://www.serverless-devs.com/fc/readme
-#   Yaml参考文档：https://www.serverless-devs.com/fc/yaml/readme
-#   关于Serverless Devs和FC组件的关系、如何声明/部署多个函数等问题，可以参考文档：https://www.serverless-devs.com/fc/tips
+#   组件帮助文档：https://github.com/devsapp/fc3/blob/master/docs/zh/readme.md
+#   Yaml参考文档：https://github.com/devsapp/fc3/blob/master/docs/zh/yaml/readme.md
+#   关于Serverless Devs和FC组件的关系、如何声明/部署多个函数等问题，可以参考文档：https://github.com/devsapp/fc3/blob/master/docs/zh/tips.md
 #   关于如何做CICD等问题，可以参考：https://www.serverless-devs.com/serverless-devs/cicd
 #   关于如何进行环境划分等问题，可以参考：https://www.serverless-devs.com/serverless-devs/extend
 #   更多函数计算案例，可参考：https://github.com/devsapp/awesome/
