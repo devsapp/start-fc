@@ -22,7 +22,7 @@
 
 <codeUrl>
 
-- [:smiley_cat: 代码](https://code.alibaba-inc.com/serverless-devs/start-fc/tree/master/fc-node/helloworld)
+- [:smiley_cat: 代码](https://code.alibaba-inc.com/serverless-devs/start-fc/tree/master/fc-node/simple-http)
 
 </codeUrl>
 <preview>

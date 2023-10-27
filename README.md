@@ -8,9 +8,9 @@
 
 - [start-fc3-nodejs-oss](./fc-node/oss/src)
 
-- [start-fc3-nodejs-exec](./fc-node/execCommand/src)
+- [start-fc3-nodejs-exec](./fc-node/exec-command/src)
 
-- [start-fc3-nodejs-http](./fc-node/simpleHttp/src)
+- [start-fc3-nodejs-http](./fc-node/simple-http/src)
 
 ### 其他
 
