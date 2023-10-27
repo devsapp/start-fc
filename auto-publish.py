@@ -2,7 +2,7 @@
 
 import os
 
-os.system("s3 registry login --token {}".format(os.environ["REGISTRY_TOKEN"]))
+os.system("s registry login --token {}".format(os.environ["REGISTRY_TOKEN"]))
 
 
 def search_publish_yaml(directory):
@@ -11,7 +11,7 @@ def search_publish_yaml(directory):
             d = os.path.join(os.getcwd(), root)
             print("try publish dir = {}".format(d))
             try:
-                os.system("cd {} && s3 registry publish cd -".format(d))
+                os.system("cd {} && s registry publish cd -".format(d))
             except Exception as e:
                 print(str(e))
 
