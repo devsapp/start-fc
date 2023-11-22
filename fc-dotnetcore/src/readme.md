@@ -1,4 +1,4 @@
-> 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
+> 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ${模版名称}` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
 
 # start-fc3-dotnetcore 帮助文档
 
@@ -22,7 +22,7 @@
 
 <codeUrl>
 
-- [:smiley_cat: 代码](https://code.alibaba-inc.com/serverless-devs/start-fc/tree/master/fc-dotnetcore)
+- [:smiley_cat: 代码](https://github.com/devsapp/start-fc/tree/V3/fc-dotnetcore/src)
 
 </codeUrl>
 <preview>
@@ -31,24 +31,15 @@
 
 ## 前期准备
 
-使用该项目，您需要有开通以下服务：
+使用该项目，您需要有开通以下服务并拥有对应权限：
 
 <service>
 
-| 服务        | 备注     |
-| ----------- | -------- |
-| 函数计算 FC | 部署资源 |
+| 服务/业务 | 权限               |
+| --------- | ------------------ |
+| 函数计算  | AliyunFCFullAccess |
 
 </service>
-
-推荐您拥有以下的产品权限 / 策略：
-<auth>
-
-| 服务/业务 | 权限               | 备注         |
-| --------- | ------------------ | ------------ |
-| 函数计算  | AliyunFCFullAccess | 部署函数资源 |
-
-</auth>
 
 <remark>
 
@@ -70,20 +61,10 @@
     
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://docs.serverless-devs.com/fc/config) ；
-  - 初始化项目：`s init --project start-fc3-dotnetcore -d start-fc3-dotnetcore`
+  - 初始化项目：`s init start-fc3-dotnetcore -d start-fc3-dotnetcore`
   - 进入项目，并进行项目部署：`cd start-fc3-dotnetcore && s deploy -y`
    
 </deploy>
-
-## 应用详情
-
-<appdetail id="flushContent">
-</appdetail>
-
-## 使用文档
-
-<usedetail id="flushContent">
-</usedetail>
 
 <devgroup>
 
@@ -99,3 +80,6 @@
 
 </p>
 </devgroup>
+
+<testEvent>
+</testEvent>
