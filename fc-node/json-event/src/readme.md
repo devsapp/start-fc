@@ -79,7 +79,7 @@
 
 <appdetail id="flushContent">
 
-当您传入JSON格式参数时，函数计算会透传参数内容,   函数代码自行解析， 该示例JSON格式事件的示例代码如下：
+当您传入 JSON 格式参数时，函数计算会透传参数内容, 函数代码自行解析， 该示例 JSON 格式事件的示例代码如下：
 
 ```nodejs
 exports.handler = function(event, context, callback) {
@@ -97,6 +97,17 @@ exports.handler = function(event, context, callback) {
 ```
 
 函数执行成功后返回的结果为 value
+
+
+<div name="test-case" hidden>
+
+```plaintext
+{
+    "key": "value"
+}
+```
+
+</div>
 
 </appdetail>
 
@@ -120,15 +131,3 @@ exports.handler = function(event, context, callback) {
 | <center>微信公众号：`serverless`</center>                                                                                         | <center>微信小助手：`xiaojiangwh`</center>                                                                                        | <center>钉钉交流群：`33947367`</center>                                                                                           |
 </p>
 </devgroup>
-
-<testEvent>
-
-
-
-| key |  value  |
-| --- |  --- |
-
-| key |  value |
-
-
-</testEvent>
