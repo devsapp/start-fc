@@ -4,9 +4,11 @@
 
 ### nodejs
 
-- [start-fc3-nodejs](./fc-node/helloworld/src)
+- [start-fc3-nodejs](./fc-node/hello-world/src)
 
-- [start-fc3-nodejs-oss](./fc-node/oss/src)
+- [start-fc3-nodejs-json](./fc-node/json-event/src)
+
+- [start-fc3-nodejs-oss](./fc-node/oss-event/src)
 
 - [start-fc3-nodejs-exec](./fc-node/exec-command/src)
 

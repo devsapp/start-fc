@@ -33,7 +33,7 @@ resources:
     props:
       region: ${vars.region}              # 关于变量的使用方法，可以参考：https://docs.serverless-devs.com/serverless-devs/yaml#%E5%8F%98%E9%87%8F%E8%B5%8B%E5%80%BC
       functionName: "{{ functionName }}"
-      runtime: "{{ runtime }}"
+      runtime: custom.debian10
       description: 'hello world by serverless devs'
       timeout: 10
       memorySize: 512
@@ -41,15 +41,13 @@ resources:
       diskSize: 512
       code: ./code
       customRuntimeConfig:
+        port: 9000
         command:
-          - gunicorn
-        args:
-          - "-c"
-          - "gunicorn_conf.py"
-          - "server:app"
+          - python3
+          - server.py
       environmentVariables: #环境变量
         PYTHONPATH: /code/3rd-packages
-        PATH: /code/3rd-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+        PATH: /code/3rd-packages/bin:/var/fc/lang/python3.10/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
