@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-custom-container-golang
-Version: 0.0.7
+Version: 0.0.8
 Provider:
   - 阿里云
 Description: 快速部署一个 Custom Container Golang 的 Hello World 函数到阿里云函数计算。
@@ -31,28 +31,19 @@ Parameters:
     region:
       title: 地域
       type: string
-      default: cn-huhehaote
+      default: cn-hangzhou
       description: 创建应用所在的地区
       enum:
-        - cn-beijing
         - cn-hangzhou
         - cn-shanghai
-        - cn-qingdao
+        - cn-beijing
         - cn-zhangjiakou
-        - cn-huhehaote
         - cn-shenzhen
-        - cn-chengdu
         - cn-hongkong
         - ap-southeast-1
-        - ap-southeast-2
-        - ap-southeast-3
-        - ap-southeast-5
         - ap-northeast-1
-        - eu-central-1
-        - eu-west-1
-        - us-west-1
         - us-east-1
-        - ap-south-1
+        - us-west-1
     functionName:
       title: 函数名称
       type: string
