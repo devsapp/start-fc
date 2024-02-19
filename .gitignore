@@ -2,3 +2,4 @@
 target
 replace-committers.sh
 fc-dotnetcore/src/HelloWorldApp/obj
+.idea

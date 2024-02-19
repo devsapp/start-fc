@@ -1,22 +1,22 @@
 > 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ${模版名称}` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
 
-# start-fc3-nodejs 帮助文档
+# start-fc3-nodejs-es 帮助文档
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs-es&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc3-nodejs" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc3-nodejs-es" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs-es&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=start-fc3-nodejs" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=start-fc3-nodejs-es" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=start-fc3-nodejs-es&type=packageDownload">
   </a>
 </p>
 
 <description>
 
-快速部署一个 Node.JS 的 Hello World 函数(CommonJS Module)到阿里云函数计算。
+快速部署一个 Node.JS 的 Hello World 函数 (ES Module) 到阿里云函数计算。
 
 </description>
 
@@ -53,16 +53,16 @@
 
 <appcenter>
    
-- :fire: 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-nodejs) ，
-  [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-nodejs) 该应用。
+- :fire: 通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-nodejs-es) ，
+  [![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=start-fc3-nodejs-es) 该应用。
    
 </appcenter>
 <deploy>
     
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
   - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://docs.serverless-devs.com/fc/config) ；
-  - 初始化项目：`s init start-fc3-nodejs -d start-fc3-nodejs`
-  - 进入项目，并进行项目部署：`cd start-fc3-nodejs && s deploy -y`
+  - 初始化项目：`s init start-fc3-nodejs-es -d start-fc3-nodejs-es`
+  - 进入项目，并进行项目部署：`cd start-fc3-nodejs-es && s deploy -y`
    
 </deploy>
 
