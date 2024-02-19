@@ -4,7 +4,9 @@
 
 ### nodejs
 
-- [start-fc3-nodejs](./fc-node/hello-world/src)
+- [start-fc3-nodejs-es](./fc-node/hello-world-es/src) (ES Module)
+
+- [start-fc3-nodejs](./fc-node/hello-world/src) (CommonJS Module)
 
 - [start-fc3-nodejs-json](./fc-node/json-event/src)
 
