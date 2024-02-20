@@ -15,3 +15,4 @@ Nuget*
 node-v12.16.1-linux-x64*
 nginx
 .s_test*
+*/*/src/s_test.yaml
