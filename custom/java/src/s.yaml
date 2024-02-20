@@ -47,11 +47,11 @@ resources:
         args:
           - '-jar'
           - 'target/demo.jar'
-        # environmentVariables: #环境变量
-        #   PATH: /opt/java8/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
-        #   JAVA_HOME: /opt/java8
-        # layers: 
-        #   - acs:fc:${vars.region}:official:layers/Java8/versions/1
+      # environmentVariables: #环境变量
+      #   PATH: /opt/java8/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+      #   JAVA_HOME: /opt/java8
+      # layers: 
+      #   - acs:fc:${vars.region}:official:layers/Java8/versions/1
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型
