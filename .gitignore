@@ -3,3 +3,4 @@ target
 replace-committers.sh
 fc-dotnetcore/src/HelloWorldApp/obj
 .idea
+*/*/src/s_dev.yaml
