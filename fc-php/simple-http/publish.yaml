@@ -4,7 +4,7 @@ Name: start-fc3-php-http
 Version: 0.0.1
 Provider:
   - 阿里云
-Description: 快速部署一个 PHP 的 Hello World 函数到阿里云函数计算。
+Description: 快速部署一个具有 http 触发器 PHP 函数到阿里云函数计算。
 HomePage: https://github.com/devsapp/start-fc
 Tags:
   - 函数计算

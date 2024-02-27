@@ -16,7 +16,7 @@
 
 <description>
 
-快速部署一个 Java 的 Hello World 函数到阿里云函数计算。
+快速部署一个具有 http 触发器的 Java 函数到阿里云函数计算。
 
 </description>
 

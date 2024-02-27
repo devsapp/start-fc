@@ -16,7 +16,7 @@
 
 <description>
 
-快速部署一个 PHP 的 Hello World 函数到阿里云函数计算。
+快速部署一个具有 http 触发器 PHP 函数到阿里云函数计算。
 
 </description>
 

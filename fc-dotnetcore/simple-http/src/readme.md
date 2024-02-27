@@ -16,7 +16,7 @@
 
 <description>
 
-快速部署一个 .NET 的 Hello World 函数到阿里云函数计算。
+快速部署一个具有 http 触发器的 .NET 函数到阿里云函数计算。
 
 </description>
 
