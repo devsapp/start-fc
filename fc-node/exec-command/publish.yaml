@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-nodejs-exec
-Version: 0.0.2
+Version: 0.0.3
 Provider:
   - 阿里云
 Description: 快速部署一个 Node.JS 调用外部命令的函数到阿里云函数计算。
