@@ -22,7 +22,7 @@
 
 <codeUrl>
 
-- [:smiley_cat: 代码](https://github.com/devsapp/start-fc/tree/V3/fc-golang/src)
+- [:smiley_cat: 代码](https://github.com/devsapp/start-fc/tree/main/fc-golang/simple-http/src)
 
 </codeUrl>
 <preview>

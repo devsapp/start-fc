@@ -22,7 +22,7 @@
 
 <codeUrl>
 
-- [:smiley_cat: 代码](https://github.com/devsapp/start-fc/tree/V3/fc-php/src)
+- [:smiley_cat: 代码](https://github.com/devsapp/start-fc/tree/main/fc-php/simple-http/src)
 
 </codeUrl>
 <preview>
