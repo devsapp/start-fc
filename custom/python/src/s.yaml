@@ -14,7 +14,7 @@ resources:
   hello_world:
     component: fc3 
     actions:       
-      pre-deploy: 
+      pre-${regex('deploy|local')}: 
         - component: fc3 build 
     props:
       region: ${vars.region}              
@@ -32,8 +32,8 @@ resources:
           - python3
           - server.py
       environmentVariables:
-        PYTHONPATH: /code/3rd-packages
-        PATH: /code/3rd-packages/bin:/var/fc/lang/python3.10/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+        PYTHONPATH: /code/python
+        PATH: /code/python/bin:/var/fc/lang/python3.10/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型

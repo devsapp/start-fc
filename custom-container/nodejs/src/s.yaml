@@ -14,7 +14,7 @@ resources:
   hello_world:
     component: fc3 
     actions:       
-      pre-deploy: 
+      pre-${regex('deploy|local')}: 
         - component: fc3 build --dockerfile ./code/Dockerfile 
     props:
       region: ${vars.region}              

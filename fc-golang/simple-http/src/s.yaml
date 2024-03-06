@@ -14,7 +14,7 @@ resources:
   hello_world:
     component: fc3 
     actions:
-      pre-deploy: 
+      pre-${regex('deploy|local')}: 
         - run: GO111MODULE=on go mod tidy
           path: ./code
         - run: GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/main main.go

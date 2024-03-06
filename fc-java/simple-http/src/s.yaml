@@ -14,7 +14,7 @@ resources:
   hello_world:
     component: fc3 
     actions: 
-      pre-deploy: # 在deploy之前运行
+      pre-${regex('deploy|local')}: # 在deploy之前运行
         - run: mvn package -DskipTests
           path: ./
     props:

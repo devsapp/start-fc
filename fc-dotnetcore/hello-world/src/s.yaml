@@ -14,7 +14,7 @@ resources:
   hello_world:
     component: fc3 
     actions:       
-      pre-deploy: 
+      pre-${regex('deploy|local')}: 
         - run: dotnet publish -c Release -o ./target
           path: ./HelloWorldApp
     props:
