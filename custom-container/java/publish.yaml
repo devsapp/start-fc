@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-custom-container-java
-Version: 0.0.10
+Version: 0.0.11
 Provider:
   - 阿里云
 Description: 快速部署一个 Custom Container Java 的 Hello World 函数到阿里云函数计算。
@@ -57,3 +57,9 @@ Parameters:
       description: 创建应用所在的地区
       enum:
         - custom-container
+    acrImage:
+      title: ACR 镜像
+      type: string
+      default: "registry.${vars.region}.aliyuncs.com/<your namespace>/<your image>:<your tag>"
+      description: 阿里云容器镜像服务ACR的镜像地址,格式为 registry.${vars.region}.aliyuncs.com/<your namespace>/<your image>:<your tag>
+

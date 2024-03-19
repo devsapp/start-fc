@@ -27,7 +27,7 @@ resources:
       diskSize: 512
       code: ./code
       customContainerConfig:
-        image: 'registry.${vars.region}.aliyuncs.com/fc-demo2/fc-demo:expressV2'
+        image: "{{ acrImage }}"
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
       #     triggerType: http # 触发器类型

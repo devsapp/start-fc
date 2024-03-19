@@ -1,0 +1,27 @@
+name: auto try publish all 
+
+on:
+  push:
+    branches:
+      - master
+env:
+  REGISTRY_TOKEN:  ${{secrets.ALIBABA_REGISTRY_V3_PUBLISH_TOKEN}} 
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+      - name: install s
+        run: |
+          npm i @serverless-devs/s -g
+      - name: publish 
+        run: |
+          python auto-publish.py

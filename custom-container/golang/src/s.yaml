@@ -27,7 +27,7 @@ resources:
       diskSize: 512
       code: ./code
       customContainerConfig:
-        image: 'registry.${vars.region}.aliyuncs.com/fc-demo2/fc-demo:golangV2'
+        image: "{{ acrImage }}"
         port: 8080
       # triggers:
       #   - triggerName: httpTrigger # 触发器名称
