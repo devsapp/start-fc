@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-php
-Version: 0.0.7
+Version: 0.0.8
 Provider:
   - 阿里云
 Description: 快速部署一个 PHP 的 Hello World 函数到阿里云函数计算。

@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-golang
-Version: 0.0.8
+Version: 0.0.9
 Provider:
   - 阿里云
 Description: 快速部署一个 Golang 的 Hello World 函数到阿里云函数计算。

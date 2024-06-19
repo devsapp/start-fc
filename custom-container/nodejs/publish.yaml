@@ -2,7 +2,7 @@
 Edition: 3.0.0
 Type: Project
 Name: start-fc3-custom-container-nodejs
-Version: 0.0.11
+Version: 0.0.12
 Provider:
   - 阿里云
 Description: 快速部署一个 Custom Container Node.js 的 Hello World 函数到阿里云函数计算。
