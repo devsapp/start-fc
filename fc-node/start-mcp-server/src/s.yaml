@@ -4,7 +4,6 @@ access: '{{access}}'
 vars:
   region: '{{region}}'
   functionName: '{{functionName}}'
-  role: '{{role}}'
 resources:
   mcp_server:
     component: fc3
