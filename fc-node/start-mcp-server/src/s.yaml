@@ -1,0 +1,44 @@
+edition: 3.0.0
+name: start-mcp-server-nodejs
+access: '{{access}}'
+vars:
+  region: '{{region}}'
+  functionName: '{{functionName}}'
+  role: '{{role}}'
+resources:
+  mcp_server:
+    component: fc3
+    actions:
+      pre-deploy:
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm i && npm run build
+          path: ./code
+    props:
+      region: ${vars.region}
+      description: Serverless Devs Web Framework Function
+      runtime: custom.debian10
+      timeout: 60
+      memorySize: 512
+      logConfig: auto
+      environmentVariables:
+        PATH: >-
+          /var/fc/lang/nodejs20/bin:/opt/nodejs20/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      customRuntimeConfig:
+        command:
+          - node
+          - ./dist/index.js
+        port: 3000
+      functionName: ${vars.functionName}
+      code: ./code
+      instanceConcurrency: 10
+      triggers:
+        - triggerName: httpTrigger
+          triggerType: http
+          triggerConfig:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - HEAD
+              - OPTIONS

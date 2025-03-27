@@ -1,0 +1,1 @@
+An example MCP SSE weather server
