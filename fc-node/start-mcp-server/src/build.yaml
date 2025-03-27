@@ -1,0 +1,12 @@
+mcp_server:
+  default:
+    languages:
+      - nodejs20
+    cache:
+      paths:
+        - "~/.npm"
+    steps:
+      - run: npm install
+        path: ./code
+      - run: npm run build
+        path: ./code

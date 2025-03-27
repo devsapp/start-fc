@@ -10,11 +10,11 @@ resources:
     component: fc3
     actions:
       pre-deploy:
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm i && npm run build
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH || true || ver && npm install && node check_node_version.mjs && npm run build
           path: ./code
     props:
       region: ${vars.region}
-      description: Serverless Devs Web Framework Function
+      description: Serverless Devs Node MCP Server
       runtime: custom.debian10
       timeout: 60
       memorySize: 512

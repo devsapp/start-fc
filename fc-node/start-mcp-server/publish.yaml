@@ -13,7 +13,7 @@ Service: # 使用的服务
   函数计算: # 取值内容参考：https://api.devsapp.cn/v3/common/args.html
     Authorities: #权限描述
       - AliyunFCFullAccess # 所需要的权限，例如AliyunFCFullAccess
-# Organization: 阿里云函数计算（FC） # 所属组织
+Organization: 阿里云函数计算（FC） # 所属组织
 Effective: Public # 是否公开，取值：Public，Private，Organization
 Parameters:
   type: object
@@ -32,22 +32,8 @@ Parameters:
         - cn-beijing
         - cn-hangzhou
         - cn-shanghai
-        - cn-qingdao
-        - cn-zhangjiakou
-        - cn-huhehaote
         - cn-shenzhen
-        - cn-chengdu
-        - cn-hongkong
         - ap-southeast-1
-        - ap-southeast-2
-        - ap-southeast-3
-        - ap-southeast-5
-        - ap-northeast-1
-        - eu-central-1
-        - eu-west-1
-        - us-west-1
-        - us-east-1
-        - ap-south-1
     functionName:
       title: 函数名
       type: string
