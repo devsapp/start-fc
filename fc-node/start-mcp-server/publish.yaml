@@ -1,13 +1,14 @@
 Edition: 3.0.0
 Type: Project
 Name: start-mcp-server-nodejs
-Version: dev
+Version: 0.0.3
 Provider:
   - 阿里云 # 取值内容参考：https://api.devsapp.cn/v3/common/args.html
-Description: FC MCP SSE Server案例
+Description: 基于 Node 的FC MCP SSE Server案例
 HomePage: https://www.serverless-devs.com
 Tags: #标签详情
   - MCP
+  - Develop
 Category: AI工具 # 取值内容参考：https://api.devsapp.cn/v3/common/args.html
 Service: # 使用的服务
   函数计算: # 取值内容参考：https://api.devsapp.cn/v3/common/args.html
@@ -20,7 +21,6 @@ Parameters:
   additionalProperties: false # 不允许增加其他属性
   required: # 必填项
     - region
-    - functionName
   properties:
     region:
       title: 地域
@@ -37,6 +37,6 @@ Parameters:
     functionName:
       title: 函数名
       type: string
-      required: true
-      default: mcp-fc-server-${default-suffix}
-      description:  函数名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-64 之间
+      pattern: "^[a-zA-Z_][a-zA-Z0-9-_]{0,127}$"
+      default: start-mcp-server-nodejs-${default-suffix}
+      description: 函数名，支持字母、数字、下划线、连字符，不能以数字或连字符开头，长度为1~64个字符。
