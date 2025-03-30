@@ -3,7 +3,6 @@ name: start-mcp-server-nodejs
 access: '{{access}}'
 vars:
   region: '{{region}}'
-  functionName: '{{functionName}}'
 resources:
   mcp_server:
     component: fc3
@@ -26,7 +25,7 @@ resources:
           - node
           - ./dist/index.js
         port: 3000
-      functionName: ${vars.functionName}
+      functionName: '{{functionName}}'
       code: ./code
       instanceConcurrency: 10
       triggers:

@@ -1,0 +1,46 @@
+edition: 3.0.0
+name: start-mcp-server-python
+access: '{{access}}'
+vars:
+  region: '{{region}}'
+  functionName: '{{functionName}}'
+resources:
+  mcp_server:
+    component: fc3
+    actions: 
+      pre-${regex('deploy|local')}: 
+        - component: fc3 build 
+    props:
+      region: ${vars.region}
+      description: Serverless Devs Python MCP Server
+      runtime: custom.debian10
+      timeout: 60
+      memorySize: 512
+      logConfig: auto
+      environmentVariables:
+        PYTHONPATH: /code/python
+        PATH: /code/python/bin:/var/fc/lang/python3.10/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+      customRuntimeConfig:
+        port: 3000
+        command:
+          - uvicorn
+          - main:app
+          - --host
+          - '0.0.0.0'
+          - --port
+          - '3000'
+      functionName: ${vars.functionName}
+      code: ./code
+      instanceConcurrency: 10
+      triggers:
+        - triggerName: httpTrigger
+          triggerType: http
+          triggerConfig:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - HEAD
+              - OPTIONS
